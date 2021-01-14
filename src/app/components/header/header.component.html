@@ -1,0 +1,17 @@
+<nav class="navbar is-black">
+  <div class="navbar-brand">
+    <div class="navbar-item">
+      <img src="/assets/images/fly.svg" alt="logo" />
+      <h1>Stéphane VERARDO</h1>
+    </div>
+    <div class="collapse navbar-collapse my-5">
+      <div class="navbar-nav">
+        <li *ngFor="let items of menuItems" class="nav-item {{items.linkName}} ml-5" >
+          <a class="nav-link" href="{{ items.linkUrl }}">
+            {{ items.linkName }}</a
+          >
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
