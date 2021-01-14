@@ -1,1 +1,30 @@
-<p>projects works!</p>
+<section class="hero hero-body is-fullheight">
+  <div
+    class="container column is-four-fifths p-5"
+    *ngFor="let item of projectsItems"
+  >
+    <div class="card">
+      <div class="columns">
+        <div class="card-body column is-half p-5">
+          <div class="card-image">
+            <img
+              src="{{ item.projectImage }}"
+              alt="Placeholder image"
+              class="has-ratio"
+            />
+          </div>
+        </div>
+        <div class="card-body column is-half p-5">
+          <a href=""
+            ><h2 class="column has-text-centered">
+              {{ item.projectTitle }}
+            </h2></a
+          >
+          <p class="has-text-justify">
+            {{ item.projectText }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
