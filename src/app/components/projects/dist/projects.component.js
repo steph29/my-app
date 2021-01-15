@@ -16,11 +16,10 @@ var ProjectsComponent = /** @class */ (function () {
                 projectImage: '/assets/images/TEV.png',
                 projectTitle: 'Terre En Vie',
                 projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-                projectUrl: 'https://www.terreenvie.com/benevoles/inscription.php',
-                projectColor: '#ffffff'
+                projectUrl: 'https://www.terreenvie.com/benevoles/inscription.php'
             },
             {
-                projectId: 1,
+                projectId: 2,
                 projectImage: '/assets/images/nature1.jpg',
                 projectTitle: 'Evaluation 1 Digital Campus Live',
                 projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
