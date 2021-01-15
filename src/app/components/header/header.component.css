@@ -1,0 +1,45 @@
+h1 {
+  margin-left: 1rem;
+  color: lightgray;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contactButton {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h2 {
+  color: lightgray;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.collpase {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.navbar-nav li {
+  display: inline;
+}
+
+.contact {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contact:hover {
+  color: #3285ef;
+}
+
+.contact:active {
+  color: #3285ef;
+}
+/*# sourceMappingURL=header.component.css.map */
