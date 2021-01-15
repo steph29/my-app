@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
       projectImage: '/assets/images/nature1.jpg',
       projectTitle: 'Evaluation 1 Digital Campus Live',
       projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      projectUrl: '',
+      projectUrl: '#',
       projectColor: '#ececec',
     },
     {
@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit {
       projectImage: '/assets/images/nature2.jpg',
       projectTitle: "John d'oeuf: projet Flutter ",
       projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      projectUrl: '',
+      projectUrl: 'https://apps.apple.com/kn/app/john-doeuf/id1520277206',
       projectColor: '#ffffff',
     },
     {
@@ -36,7 +36,7 @@ export class ProjectsComponent implements OnInit {
       projectImage: '/assets/images/nature3.jpg',
       projectTitle: 'Ma super Agence: projet Symfony',
       projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      projectUrl: '',
+      projectUrl: '#',
       projectColor: '#ececec',
     },
     {
@@ -44,7 +44,7 @@ export class ProjectsComponent implements OnInit {
       projectImage: '/assets/images/nature4.jpg',
       projectTitle: 'Training Frontend: projet Frontend Mentor',
       projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      projectUrl: '',
+      projectUrl: '#',
       projectColor: '#ffffff',
     },
   ];

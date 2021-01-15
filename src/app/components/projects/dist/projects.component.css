@@ -6,3 +6,9 @@ h2 {
   color: #3285ef;
   font-weight: 750;
 }
+
+img {
+  width: 400px;
+  height: 350px;
+  border-radius: 50%;
+}
