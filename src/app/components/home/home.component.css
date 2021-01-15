@@ -1,0 +1,20 @@
+h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3285ef;
+}
+
+.hero-one {
+  background-image: url("/assets/images/laptop.jpg") !important;
+  background-size: cover;
+  background-position: center center;
+}
+
+.trait {
+  border-left: 1px solid #3285ef;
+}
+/*# sourceMappingURL=home.component.css.map */
