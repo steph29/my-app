@@ -13,16 +13,10 @@ export class ProjectsComponent implements OnInit {
       projectTitle: 'Terre En Vie',
       projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
       projectUrl: 'https://www.terreenvie.com/benevoles/inscription.php',
-<<<<<<< Updated upstream
       projectColor: '#ffffff',
     },
     {
       projectId: 1,
-=======
-    },
-    {
-      projectId: 2,
->>>>>>> Stashed changes
       projectImage: '/assets/images/nature1.jpg',
       projectTitle: 'Evaluation 1 Digital Campus Live',
       projectText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
@@ -54,7 +48,6 @@ export class ProjectsComponent implements OnInit {
       projectColor: '#ffffff',
     },
   ];
-
 
   ngOnInit(): void {}
 }
