@@ -1,7 +1,7 @@
-<section class="hero hero-body is-fullheight">
+<section class="hero hero-body is-fullheight reveal-1">
   <div class="container column p-5" *ngFor="let item of projectsItems">
     <div *ngIf="item.projectId % 2 == 0; then pair; else impair"></div>
-    <ng-template #pair>
+    <ng-template #pair class="reveal-2">
       <div class="card columns">
         <div class="card-body column is-half p-5">
           <div class="card-image">
@@ -21,10 +21,10 @@
       </div>
     </ng-template>
 
-    <ng-template #impair>
+    <ng-template #impair class="reveal-2">
       <div class="card columns">
         <div class="card-body column is-half p-5">
-          <a href="{{}item.projectUrl}" target="_blank"
+          <a href="{{ item.projectUrl }}" target="_blank"
             ><h2 class="column has-text-centered">
               {{ item.projectTitle }}
             </h2></a
