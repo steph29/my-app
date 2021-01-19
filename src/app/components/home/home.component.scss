@@ -1,4 +1,7 @@
 $primary: #3285ef;
+$lightgray: hsl(0, 0%, 98%);
+$orange: #fea510;
+
 h1 {
   font-size: 6rem;
   color: white;
@@ -15,9 +18,27 @@ h2 {
 .trait {
   border-left: 1px solid $primary;
 }
+.htrait {
+  padding-top: 6rem;
+  border-bottom: 1px solid $primary;
+}
 .subtitle {
   padding-bottom: 4rem;
   padding-top: 4rem;
+}
+.subtitle-2 {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  color: $orange;
+  text-decoration: underline;
+}
+.title-sect3 {
+  color: $lightgray;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.space {
+  justify-content: space-around;
 }
 img {
   margin-left: auto;
@@ -26,6 +47,35 @@ img {
 }
 .hero-three {
   height: 600px;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+.card-title {
+  color: #3285ef;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.wrapper {
+  width: 400px;
+  height: 350px;
+  background-color: hsl(0, 0%, 98%);
+}
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(60px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease-in-out;
+}
+.reveal-2 {
+  transition-delay: 0.1s;
+}
+.reveal-3 {
+  transition-delay: 0.2s;
 }
 @media screen and(max-width: 768px) {
   .trait {
@@ -46,5 +96,11 @@ img {
   }
   h2 {
     font-size: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal [class*="reveal-"] {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }
