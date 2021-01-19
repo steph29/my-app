@@ -1,6 +1,7 @@
 $primary: #3285ef;
 p {
   font-size: 0.8rem;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 h2 {
   color: $primary;
@@ -10,6 +11,9 @@ img {
   width: 400px;
   height: 350px;
   border-radius: 50%;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 [class*="reveal-"] {
   opacity: 0;
@@ -24,11 +28,23 @@ img {
   transition-delay: 0.1s;
 }
 .reveal-3 {
-  transition-delay: 0.2s;
+  transition-delay: 1s;
+}
+.reveal-4 {
+  transition-delay: 2s;
+}
+.reveal-5 {
+  transition-delay: 3s;
+}
+.reveal-6 {
+  transition-delay: 4s;
 }
 @media (prefers-reduced-motion: reduce) {
   .reveal [class*="reveal-"] {
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
+}
+.container {
+  width: 90%;
 }
