@@ -1,24 +1,26 @@
 $primary: #3285ef;
+nav {
+  height: 100px;
+}
+
 h1 {
+  font-size: 1.5rem;
   margin-left: 1rem;
   color: lightgray;
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
-.contactButton {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 h2 {
   color: lightgray;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
-.collpase {
-  margin-top: auto;
-  margin-bottom: auto;
+.navbar-brand {
+  padding-top: 1.5rem;
+}
+.navbar-menu {
+  background-color: black;
 }
 .navbar-nav {
   li {
@@ -26,13 +28,21 @@ h2 {
   }
   list-style: none;
 }
+.scale:hover {
+  scale: 1.1;
+  transition: 0.2s scale ease-in-out;
+}
+
+a:hover,
+a:active {
+  color: $primary;
+}
 .contact {
   font-weight: 800;
   text-transform: uppercase;
-  &:hover {
-    color: $primary;
-  }
-  &:active {
-    color: $primary;
+}
+@media screen and (min-width: 769px) {
+  .navbar-brand {
+    padding-top: 0;
   }
 }
