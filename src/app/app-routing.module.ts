@@ -16,11 +16,11 @@ const routes: Routes = [
     component: ContactComponent,
   },
   {
-    path: 'projects',
+    path: 'portfolio',
     component: ProjectsComponent,
   },
   {
-    path: 'passions',
+    path: 'la-team',
     component: PassionsComponent,
   },
 ];

@@ -2,40 +2,56 @@ $primary: #3285ef;
 $lightgray: hsl(0, 0%, 98%);
 $orange: #fea510;
 
+.peas {
+  background: radial-gradient($orange 1px, transparent 2px);
+  background-size: 20px 20px;
+}
+.striped {
+  background: repeating-linear-gradient(
+    45deg,
+    #ececec 0,
+    #ececec 2px,
+    transparent 2px,
+    transparent 15px
+  );
+}
 h1 {
   font-size: 6rem;
   color: white;
+  font-family: "Pompiere", cursive;
 }
 h2 {
-  font-size: 2rem;
-  color: $primary;
+  font-size: 4rem;
+  color: $orange;
+  font-family: "Pompiere", cursive;
+}
+p {
+  font-family: "Montserrat Alternates", sans-serif;
 }
 .hero-one {
   background-image: url("/assets/images/laptop.jpg") !important;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 .trait {
-  border-left: 1px solid $primary;
+  border-left: 1px solid $lightgray;
 }
 .htrait {
   padding-top: 6rem;
   border-bottom: 1px solid $primary;
 }
 .subtitle {
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .subtitle-2 {
   padding-bottom: 2rem;
-  padding-top: 3rem;
+
   color: $orange;
-  text-decoration: underline;
 }
-.title-sect3 {
-  color: $lightgray;
-  font-size: 1.5rem;
-  font-weight: 700;
+.columns:last-child {
+  margin-bottom: 0;
 }
 .space {
   justify-content: space-around;
@@ -46,21 +62,37 @@ img {
   padding-bottom: 3rem;
 }
 .hero-three {
-  height: 600px;
   align-items: center;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.hero-four {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
 li {
   list-style: none;
 }
-.card-title {
-  color: #3285ef;
-  font-size: 1.4rem;
-  font-weight: 800;
+h3 {
+  color: $orange;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.white {
+  color: $lightgray;
 }
 .wrapper {
   width: 400px;
-  height: 350px;
-  background-color: hsl(0, 0%, 98%);
+}
+.wrapper-container {
+  background-color: white;
+  margin: 20px;
+  vertical-align: middle;
+  margin-bottom: 3rem;
+  height: 100%;
 }
 [class*="reveal-"] {
   opacity: 0;

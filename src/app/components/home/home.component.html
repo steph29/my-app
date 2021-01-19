@@ -1,14 +1,15 @@
 <section class="hero hero-one is-fullheight is-bold">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">Stéphane VERARDO</h1>
+      <img src="/assets/images/flyWhite.svg" alt="" />
+      <h1>Stéphane VERARDO</h1>
       <h2>web developper</h2>
     </div>
   </div>
 </section>
 
-<section class="hero is-bold reveal-1">
-  <div class="container">
+<section class="hero is-bold reveal-1 hero-four">
+  <div class="container .pattern-diagonal-lines-sm">
     <h2 class="has-text-centered subtitle reveal-2">Performances</h2>
     <p class="reveal-3">
       Je mets à votre disposition mes compétences et mon savoir faire afin de
@@ -17,16 +18,16 @@
     <div class="htrait"></div>
   </div>
 </section>
-<section class="hero hero-body hero-three reveal-1">
+<section class="hero hero-body hero-three reveal-1 striped">
   <div class="has-text-centered">
-    <h2 class="has-text-left subtitle-2 reveal-2">Les offres</h2>
-    <div class="columns .container.is-max-desktop is-dektop space">
+    <h2 class="has-text-centered subtitle-2 reveal-2">Les offres</h2>
+    <div class="container columns .container.is-max-desktop is-dektop">
       <div *ngFor="let item of cardContainerMenu">
-        <div class="column has-text-justified">
+        <div class="column has-text-justified wrapper-container">
           <div class="wrapper">
-            <h5 class="card-title has-text-centered is-bold">
+            <h3 class="card-title has-text-centered is-bold">
               {{ item.cardTitle }}
-            </h5>
+            </h3>
             <p class="card-text px-4">{{ item.cardBody }}</p>
           </div>
         </div>
@@ -36,65 +37,66 @@
 </section>
 
 <section class="hero hero-body hero-two is-info reveal-1">
-  <div class="has-text-centered reveal-2">
-    <h2 class="has-text-centered subtitle">En quelques mots :</h2>
-    <div class=".container.is-max-desktop columns is-dektop">
-      <div class="column has-text-centered">
-        <div>
-          <img
-            src="/assets/images/fly.svg"
-            alt="logo"
-            class="image is-128x128"
-          />
+  <div class="container">
+    <div class="has-text-centered reveal-2">
+      <h2 class="has-text-centered subtitle">En quelques mots :</h2>
+      <div class=".container.is-max-desktop columns is-dektop">
+        <div class="column has-text-centered">
+          <div>
+            <img
+              src="/assets/images/flyWhite.svg"
+              alt="logo"
+              class="image is-128x128"
+            />
+          </div>
+          <h3 class="white">Je suis plutôt café noirs long</h3>
+          <div>
+            <p class="pt-5 mx-5 has-text-justified">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+              aperiam obcaecati. Tempora consectetur tempore consequuntur illo
+              eum ad nobis laboriosam nam provident eos ipsa reprehenderit
+              porro, veniam quaerat sapiente animi!
+            </p>
+          </div>
         </div>
-        <div class="title-sect3">Je suis plutôt café noirs long</div>
+        <div class="column has-text-centered trait">
+          <div>
+            <img
+              src="/assets/images/flyWhite.svg"
+              alt="logo"
+              class="image is-128x128"
+            />
+          </div>
+          <h3 class="white">100% satisfait</h3>
 
-        <div>
-          <p class="pt-5 mx-5 has-text-justified">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-            aperiam obcaecati. Tempora consectetur tempore consequuntur illo eum
-            ad nobis laboriosam nam provident eos ipsa reprehenderit porro,
-            veniam quaerat sapiente animi!
-          </p>
+          <div>
+            <p class="pt-5 mx-5 has-text-justified">
+              Je ne vous lâche pas tant que vous ne serez pas satisfait à 100%
+              de votre <strong>site internet</strong> ou de votre
+              <strong>application mobile</strong> car c'est avant tout votre
+              identité
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="column has-text-centered trait">
-        <div>
-          <img
-            src="/assets/images/fly.svg"
-            alt="logo"
-            class="image is-128x128"
-          />
-        </div>
-        <div class="title-sect3">100% satisfait</div>
+        <div class="column has-text-centered trait">
+          <div>
+            <img
+              src="/assets/images/flyWhite.svg"
+              alt="logo"
+              class="image is-128x128"
+            />
+          </div>
+          <h3 class="white">Parlons de nous !</h3>
 
-        <div>
-          <p class="pt-5 mx-5 has-text-justified">
-            Je ne vous lâche pas tant que vous ne serez pas satisfait à 100% de
-            votre <strong>site internet</strong> ou de votre
-            <strong>application mobile</strong> car c'est avant tout votre
-            identité
-          </p>
-        </div>
-      </div>
-      <div class="column has-text-centered trait">
-        <div>
-          <img
-            src="/assets/images/fly.svg"
-            alt="logo"
-            class="image is-128x128"
-          />
-        </div>
-        <div class="title-sect3">Parlons de nous !</div>
-
-        <div>
-          <p class="pt-5 mx-5 has-text-justified">
-            Vous rencontrer reste le moyen le plus sûr de comprend vos besoins,
-            votre monde et votre vision. De ce fait, je rencontre
-            systématiquement ( avec un masque ;) ) mes clients afin de mieux
-            cerner vos attentes et de vous proposer un
-            <strong>site web</strong> qui correspond le mieux à vos besoins.
-          </p>
+          <div>
+            <p class="pt-5 mx-5 has-text-justified">
+              Vous rencontrer reste le moyen le plus sûr de comprend vos
+              besoins, votre monde et votre vision. De ce fait, je rencontre
+              systématiquement ( avec un masque ;) ) mes clients afin de mieux
+              cerner vos attentes et de vous proposer un
+              <strong>site web</strong> qui correspond le mieux à vos besoins.
+            </p>
+          </div>
         </div>
       </div>
     </div>

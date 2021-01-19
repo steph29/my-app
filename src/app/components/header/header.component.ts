@@ -13,8 +13,8 @@ export class HeaderComponent implements OnInit {
 
   menuItems = [
     { linkId: 1, linkName: 'home', linkUrl: '' },
-    { linkId: 2, linkName: 'projects', linkUrl: 'projects' },
-    { linkId: 3, linkName: 'passions', linkUrl: 'passions' },
+    { linkId: 2, linkName: 'portfolio', linkUrl: 'portfolio' },
+    { linkId: 3, linkName: 'la team', linkUrl: 'la-team' },
   ];
   buttonItems = [{ linkId: 4, linkName: 'contact', linkUrl: 'contact' }];
   toggleNavbar() {
