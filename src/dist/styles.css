@@ -1,18 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bulma/css/bulma.min.css";
 @import "~pattern.css/dist/pattern.min.css";
-
-$primary: #3285ef;
-$lightgray: hsl(0, 0%, 98%);
-$orange: #fea510;
-
 h1 {
   font-size: 6rem;
   color: white;
   font-family: "Pompiere", cursive;
 }
+
 h2 {
   font-size: 3rem;
-  color: $orange;
+  color: #fea510;
   font-family: "Pompiere", cursive;
 }

@@ -1,12 +1,20 @@
-<section class="hero hero-body is-fullheight is-bold">
-  <div class="container">
-    <div class="columns hero-body is-info is-fullheight">
-      <div class="column is-half">
-        <div class="hero hero-body is-info"></div>
-      </div>
-      <div class="column is-half">
-        <div class="hero hero-body is-info"></div>
-      </div>
+<section class="hero is-fullheight is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Mettre une photo qui fasse ressortir le texte h1 en blanc -->
+
+      <div class="peas"><h1>La Big Team</h1></div>
+
+      <h2>Mais qui se cache derrière cette tasse ?</h2>
     </div>
+  </div>
+</section>
+
+<section class="hero is-fullheight">
+  <h2 class="has-text-centered mb-5">Mes compétences</h2>
+  <div *ngFor="let item of progressMenu">
+    <progress class="progress" value="{{ item.prgressValue }}" max="100">
+      {{ item.progressName }}
+    </progress>
   </div>
 </section>

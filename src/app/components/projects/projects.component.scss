@@ -4,16 +4,20 @@ p {
   font-family: "Montserrat Alternates", sans-serif;
 }
 h2 {
-  color: $primary;
   font-weight: 750;
+}
+.striped {
+  background: repeating-linear-gradient(
+    45deg,
+    #ececec 0,
+    #ececec 2px,
+    transparent 2px,
+    transparent 8px
+  );
 }
 img {
   width: 400px;
   height: 350px;
-  border-radius: 50%;
-  &:hover {
-    opacity: 0.6;
-  }
 }
 [class*="reveal-"] {
   opacity: 0;
@@ -39,6 +43,10 @@ img {
 .reveal-6 {
   transition-delay: 4s;
 }
+
+.columns {
+  display: flex;
+}
 @media (prefers-reduced-motion: reduce) {
   .reveal [class*="reveal-"] {
     opacity: 1 !important;
@@ -47,4 +55,20 @@ img {
 }
 .container {
   width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first {
+    order: 2;
+  }
+  .second {
+    order: 1;
+  }
 }

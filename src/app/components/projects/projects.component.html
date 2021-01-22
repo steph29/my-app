@@ -6,12 +6,18 @@
     <div *ngIf="item.projectId % 2 == 0; then pair; else impair"></div>
     <ng-template #pair class="">
       <div class="columns">
-        <div class="hero-body column is-half">
+        <div class="hero-body column is-half first">
           <div class="image is-centered">
-            <img src="{{ item.projectImage }}" alt="Placeholder image" />
+            <div class="striped">
+              <img
+                style="transform: translate(-20px, -20px)"
+                src="{{ item.projectImage }}"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        <div class="column is-half p-5">
+        <div class="column is-half p-5 second">
           <a href="{{ item.projectUrl }}" target="_blank"
             ><h2 class="column has-text-centered">
               {{ item.projectTitle }}
@@ -38,7 +44,13 @@
         </div>
         <div class="hero-body is-half p-5">
           <div class="image">
-            <img src="{{ item.projectImage }}" alt="Placeholder image" />
+            <div class="striped">
+              <img
+                style="transform: translate(20px, -20px)"
+                src="{{ item.projectImage }}"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
