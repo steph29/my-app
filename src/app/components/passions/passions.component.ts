@@ -15,7 +15,7 @@ export class PassionsComponent implements OnInit {
     {
       progressId: 1,
       prgressValue: 90,
-      prgressName: 'CSS',
+      prgressName: 'CSS / SCSS',
     },
     {
       progressId: 2,
@@ -32,31 +32,37 @@ export class PassionsComponent implements OnInit {
       prgressValue: 50,
       prgressName: 'PHP',
     },
+
     {
       progressId: 5,
-      prgressValue: 40,
-      prgressName: 'PHP',
-    },
-    {
-      progressId: 6,
-      prgressValue: 60,
+      prgressValue: 75,
       prgressName: 'Server JS',
     },
     {
-      progressId: 7,
-      prgressValue: 60,
+      progressId: 6,
+      prgressValue: 75,
       prgressName: 'Node JS',
     },
     {
-      progressId: 8, prgressValue: 70, prgressName: 'MongoDB',
-    },{
-      progressId: 9, prgressValue: 70, prgressName: 'MySQL',
+      progressId: 7,
+      prgressValue: 70,
+      prgressName: 'MongoDB',
     },
     {
-      progressId: 10, prgressValue: 70, prgressName: 'Flutter',
-    },{
-      progressId: 11, prgressValue: 50, prgressName: 'iOS',
-    }
+      progressId: 8,
+      prgressValue: 70,
+      prgressName: 'MySQL',
+    },
+    {
+      progressId: 9,
+      prgressValue: 70,
+      prgressName: 'Flutter',
+    },
+    {
+      progressId: 10,
+      prgressValue: 50,
+      prgressName: 'iOS',
+    },
   ];
   constructor() {}
 

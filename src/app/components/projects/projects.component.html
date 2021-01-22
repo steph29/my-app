@@ -4,9 +4,9 @@
     *ngFor="let item of projectsItems"
   >
     <div *ngIf="item.projectId % 2 == 0; then pair; else impair"></div>
-    <ng-template #pair class="">
+    <ng-template #pair>
       <div class="columns">
-        <div class="hero-body column is-half first">
+        <div class="hero-body column is-half first imageAlign">
           <div class="image is-centered">
             <div class="striped">
               <img
@@ -30,7 +30,7 @@
       </div>
     </ng-template>
 
-    <ng-template #impair class="">
+    <ng-template #impair>
       <div class="columns">
         <div class="column is-half p-5">
           <a href="{{ item.projectUrl }}" target="_blank"
@@ -42,7 +42,7 @@
             {{ item.projectText }}
           </p>
         </div>
-        <div class="hero-body is-half p-5">
+        <div class="hero-body is-half p-5 imageAlign">
           <div class="image">
             <div class="striped">
               <img

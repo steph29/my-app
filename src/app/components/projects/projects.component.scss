@@ -19,6 +19,9 @@ img {
   width: 400px;
   height: 350px;
 }
+.imageAlign {
+  justify-content: center;
+}
 [class*="reveal-"] {
   opacity: 0;
   transform: translateY(60px);

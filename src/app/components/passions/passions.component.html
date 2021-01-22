@@ -1,4 +1,4 @@
-<section class="hero is-fullheight is-bold">
+<section class="hero hero-one is-fullheight is-bold">
   <div class="hero-body">
     <div class="container">
       <!-- Mettre une photo qui fasse ressortir le texte h1 en blanc -->
@@ -10,11 +10,16 @@
   </div>
 </section>
 
-<section class="hero is-fullheight">
+<section class="container hero is-fullheight my-5">
   <h2 class="has-text-centered mb-5">Mes compétences</h2>
   <div *ngFor="let item of progressMenu">
-    <progress class="progress" value="{{ item.prgressValue }}" max="100">
-      {{ item.progressName }}
-    </progress>
+    <div class="textH3 striped">
+      <h3 class="has-text-centered">{{ item.prgressName }}</h3>
+    </div>
+    <progress
+      class="progress"
+      value="{{ item.prgressValue }}"
+      max="100"
+    ></progress>
   </div>
 </section>
