@@ -1,20 +1,21 @@
-$primary: #3285ef;
 .hero-one {
   background-image: url("/assets/images/laptop.jpg");
   background-size: cover;
   background-position: center center;
 }
+
 .button {
-  background-color: $primary;
+  background-color: #3285ef;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  &:hover {
-    background-color: $primary;
-    scale: 1.05;
-    transition: 0.1s scale ease-in-out;
-  }
 }
+.button:hover {
+  background-color: #3285ef;
+  scale: 1.05;
+  transition: 0.1s scale ease-in-out;
+}
+
 form {
   width: 50%;
   margin-left: auto;

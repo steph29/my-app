@@ -1,8 +1,14 @@
 <section class="hero hero-one is-fullheight section">
   <div class="hero-body">
     <div class="container">
-      <form (ngSubmit)="processForm()">
+      <h3 class="has-text-centered">Vous désirez me contacter?</h3>
+      <p class="has-text-centered mb-5">
+        Où juste partager un café et discuter de vos projets? Alors n'hésitez
+        pas, écrivez-moi ! Promis je ne vous mangerai pas
+      </p>
+      <form (ngSubmit)="processForm()" method="POST" action="send">
         <div class="field">
+          {{msg}}
           <input
             type="text"
             name="name"

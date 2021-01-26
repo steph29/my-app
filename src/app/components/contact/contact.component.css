@@ -1,5 +1,5 @@
 .hero-one {
-  background-image: url("/assets/images/laptop.jpg") !important;
+  background-image: url("/assets/images/laptop.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -16,5 +16,17 @@
   scale: 1.05;
   -webkit-transition: 0.1s scale ease-in-out;
   transition: 0.1s scale ease-in-out;
+}
+
+form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=contact.component.css.map */
