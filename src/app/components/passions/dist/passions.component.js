@@ -19,7 +19,7 @@ var PassionsComponent = /** @class */ (function () {
             {
                 progressId: 1,
                 prgressValue: 90,
-                prgressName: 'CSS'
+                prgressName: 'CSS / SCSS'
             },
             {
                 progressId: 2,
@@ -38,32 +38,55 @@ var PassionsComponent = /** @class */ (function () {
             },
             {
                 progressId: 5,
-                prgressValue: 40,
-                prgressName: 'PHP'
-            },
-            {
-                progressId: 6,
-                prgressValue: 60,
+                prgressValue: 75,
                 prgressName: 'Server JS'
             },
             {
-                progressId: 7,
-                prgressValue: 60,
+                progressId: 6,
+                prgressValue: 75,
                 prgressName: 'Node JS'
             },
             {
-                progressId: 8, prgressValue: 70, prgressName: 'MongoDB'
-            }, {
-                progressId: 9, prgressValue: 70, prgressName: 'MySQL'
+                progressId: 7,
+                prgressValue: 70,
+                prgressName: 'MongoDB'
             },
             {
-                progressId: 10, prgressValue: 70, prgressName: 'Flutter'
-            }, {
-                progressId: 11, prgressValue: 50, prgressName: 'iOS'
-            }
+                progressId: 8,
+                prgressValue: 70,
+                prgressName: 'MySQL'
+            },
+            {
+                progressId: 9,
+                prgressValue: 70,
+                prgressName: 'Flutter'
+            },
+            {
+                progressId: 10,
+                prgressValue: 50,
+                prgressName: 'iOS'
+            },
         ];
     }
-    PassionsComponent.prototype.ngOnInit = function () { };
+    PassionsComponent.prototype.ngOnInit = function () {
+        var ratio = 0.1;
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+        var handleIntersect = function (entries, obeserver) {
+            entries.forEach(function (entry) {
+                if (entry.intersectionRatio > ratio)
+                    entry.target.classList.add('reveal-visible');
+                obeserver.unobserve(entry.target);
+            });
+        };
+        var observer = new IntersectionObserver(handleIntersect, options);
+        observer.observe(document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
+            observer.observe(r);
+        }));
+    };
     PassionsComponent = __decorate([
         core_1.Component({
             selector: 'app-passions',

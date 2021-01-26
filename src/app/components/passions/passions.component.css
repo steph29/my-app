@@ -1,23 +1,76 @@
 .hero-one {
-  background-color: #facb0e;
+  background: url("/assets/images/freelance.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .striped {
-  background: repeating-linear-gradient(90deg, #ececec 0, #ececec 1px, #facb0e 1px, #facb0e 40px);
+  background: repeating-linear-gradient(45deg, #ececec 0, #ececec 2px, transparent 2px, transparent 15px);
 }
 
 .peas {
-  background: radial-gradient(#e7393f 1px, white 2px);
+  background: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 2px);
   background-size: 15px 15px;
-  max-width: 30pc;
+  max-width: 100pc;
 }
 
 h1 {
-  color: #facb0e;
+  color: #fea510;
 }
 
 progress {
-  max-width: 40pc;
-  background-color: #facb0e;
+  max-width: 100pc;
+  background-color: #fea510;
+}
+
+.trait {
+  background-color: #fff;
+}
+
+h3 {
+  color: #fea510;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+[class*="reveal-"] {
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.reveal-2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.reveal-3 {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.reveal-4 {
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.reveal-5 {
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+}
+
+.reveal-6 {
+  -webkit-transition-delay: 4s;
+          transition-delay: 4s;
 }
 /*# sourceMappingURL=passions.component.css.map */

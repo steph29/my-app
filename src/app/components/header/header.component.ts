@@ -8,8 +8,8 @@ declare var $: any;
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('navBurger') navBurger: ElementRef;
-  @ViewChild('navMenu') navMenu: ElementRef;
+  @ViewChild('navBurger') navBurger: ElementRef | undefined;
+  @ViewChild('navMenu') navMenu: ElementRef | undefined;
   menuItems = [
     { linkId: 1, linkName: 'home', linkUrl: '' },
     { linkId: 2, linkName: 'portfolio', linkUrl: 'portfolio' },
@@ -20,9 +20,8 @@ export class HeaderComponent implements OnInit {
     this.navBurger.nativeElement.classList.toggle('is-active');
     this.navMenu.nativeElement.classList.toggle('is-active');
   }
-constructor() {
-   }
- 
-  
+
+  constructor() {}
+
   ngOnInit(): void {}
 }
