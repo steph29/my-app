@@ -1,6 +1,6 @@
 $primary: #3285ef;
 .hero-one {
-  background: url("/assets/images/freelance.jpg");
+  background: url("/assets/images/freelance.jpg") fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -47,15 +47,15 @@ h3 {
 .reveal-2 {
   transition-delay: 0.1s;
 }
-.reveal-3 {
-  transition-delay: 1s;
+.container-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: 1.5rem;
 }
-.reveal-4 {
-  transition-delay: 2s;
-}
-.reveal-5 {
-  transition-delay: 3s;
-}
-.reveal-6 {
-  transition-delay: 4s;
+.wrapper-container {
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
