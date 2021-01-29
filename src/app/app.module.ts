@@ -9,6 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PassionsComponent } from './components/passions/passions.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { PassionsComponent } from './components/passions/passions.component';
     ProjectsComponent,
     PassionsComponent,
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
