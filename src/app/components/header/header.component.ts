@@ -8,8 +8,8 @@ declare var $: any;
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('navBurger') navBurger: ElementRef | undefined;
-  @ViewChild('navMenu') navMenu: ElementRef | undefined;
+  @ViewChild('navBurger') navBurger = ElementRef;
+  @ViewChild('navMenu') navMenu = ElementRef;
   menuItems = [
     { linkId: 1, linkName: 'home', linkUrl: '' },
     { linkId: 2, linkName: 'portfolio', linkUrl: 'portfolio' },

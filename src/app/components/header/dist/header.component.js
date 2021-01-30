@@ -10,6 +10,8 @@ exports.HeaderComponent = void 0;
 var core_1 = require("@angular/core");
 var HeaderComponent = /** @class */ (function () {
     function HeaderComponent() {
+        this.navBurger = core_1.ElementRef;
+        this.navMenu = core_1.ElementRef;
         this.menuItems = [
             { linkId: 1, linkName: 'home', linkUrl: '' },
             { linkId: 2, linkName: 'portfolio', linkUrl: 'portfolio' },
