@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-passions',
@@ -67,27 +68,6 @@ export class PassionsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const ratio = 0.1;
-    var options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.3,
-    };
-
-    const handleIntersect = function (entries, obeserver) {
-      entries.forEach(function (entry) {
-        if (entry.intersectionRatio > ratio)
-          entry.target.classList.add('reveal-visible');
-        obeserver.unobserve(entry.target);
-      });
-      
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(
-      document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
-        observer.observe(r);
-      })
-    );
+    AOS.init();
   }
 }

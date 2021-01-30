@@ -1,9 +1,11 @@
+import { AotSummaryResolver } from '@angular/compiler';
 import { Input } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { element } from 'protractor';
 import { Subject } from 'rxjs';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -34,27 +36,6 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    const ratio = 0.1;
-    var options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.3,
-    };
-
-    const handleIntersect = function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.intersectionRatio > ratio) {
-          entry.target.classList.add('reveal-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(
-      document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
-        observer.observe(r);
-      })
-    );
+    AOS.init();
   }
 }

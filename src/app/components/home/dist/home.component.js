@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.HomeComponent = void 0;
 var core_1 = require("@angular/core");
+var aos_1 = require("aos");
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
         this.cardContainerMenu = [
@@ -29,24 +30,7 @@ var HomeComponent = /** @class */ (function () {
         ];
     }
     HomeComponent.prototype.ngOnInit = function () {
-        var ratio = 0.1;
-        var options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.3
-        };
-        var handleIntersect = function (entries, observer) {
-            entries.forEach(function (entry) {
-                if (entry.intersectionRatio > ratio) {
-                    entry.target.classList.add('reveal-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        };
-        var observer = new IntersectionObserver(handleIntersect, options);
-        observer.observe(document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
-            observer.observe(r);
-        }));
+        aos_1["default"].init();
     };
     HomeComponent = __decorate([
         core_1.Component({
