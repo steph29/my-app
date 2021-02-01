@@ -13,62 +13,25 @@
   </div>
 </section>
 
-<section class="container-fluid my-5 striped">
-  <div data-aos="fade-up" data-aos-duration="2000">
-    <h2 class="has-text-centered mb-5">Mes compétences</h2>
-  </div>
-
-  <div
-    class="container container-center columns .container.is-max-desktop is-dektop"
-  >
-    <div class="column wrapper-container">
-      <div class="trait mx-5">
-        <div data-aos="fade-up" data-aos-duration="2000">
-          <h3>Front-end</h3>
+<section class="hero hero-body hero-three striped">
+  <div class="has-text-centered">
+    <h2
+      class="has-text-centered subtitle-2"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      Mes compétences
+    </h2>
+    <div class="container columns .container.is-max-desktop is-dektop">
+      <div *ngFor="let item of contentItem">
+        <div class="column has-text-justified wrapper-container">
+          <div class="wrapper">
+            <h3 class="card-title has-text-centered is-bold">
+              {{ item.contentTitle }}
+            </h3>
+            <p class="card-text px-4">{{ item.contentText }}</p>
+          </div>
         </div>
-
-        <p class="mx-5">
-          Bonne maitrise de HTML, CSS, Bootstrap, JS. J'utilise les framework
-          <strong>Angular</strong>. J'ai une sensibilité aux UX/UI avec l'envie
-          de faire des sites web moderne, dynamique, et léger afin de réduire
-          l'impact environnemental. Création du site d'inscription de Terre en
-          Vie, du site mon site cv, des sites d'evaluation pour Digital Campus
-          Studi, de site d'entrainement sur Front-end Mentor. Bonne connaissance
-          de l'emploi des API ( IP- tracker utilise l'API
-          https://geo.ipify.org/).
-        </p>
-      </div>
-    </div>
-    <div class="column wrapper-container">
-      <div class="trait mx-5">
-        <div data-aos="fade-up" data-aos-duration="2000">
-          <h3>Back-end</h3>
-        </div>
-
-        <p class="mx-5">
-          Pour les sites de <strong>Terre en Vie</strong>, j'ai utilisé MySQL.
-          Utilisation des clés externes, sessions, page login / password
-          sécurisée, page mon compte extractant les créneaux de bénévolats de
-          fonction de la personne qui se connecte, mailing. J'ai également une
-          formation sur MongoDB. Coté langage, j'ai une bonne connaissance de
-          PHP, mais j'ai une appétance pour NodeJS et ExpressJS. Découverte de
-          Symfony 4.
-        </p>
-      </div>
-    </div>
-    <div class="column wrapper-container">
-      <div class="trait mx-5">
-        <div data-aos="fade-up" data-aos-duration="2000">
-          <h3>Mobile</h3>
-        </div>
-
-        <p class="mx-5">
-          La création de <strong>John d'oeuf</strong> est faite sur Flutter afin
-          de le distribuer sur les plateformes iOS et Android. Néanmoins j'ai un
-          goût prononcé pour iOS et XCode. Utilisation sur XCode et Flutter
-          d'API ( appli météo), création d'une messagerie simple type whatsapp,
-          persistence de donnée ( appli de liste de courses)
-        </p>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu" id="navbar-menu" #navMenu>
+  <div class="navbar-menu" id="nav-menu" #navMenu (click)="toggleNavbar()">
     <div class="navbar-start">
       <li
         *ngFor="let items of menuItems"

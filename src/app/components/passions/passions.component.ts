@@ -7,62 +7,24 @@ import AOS from 'aos';
   styleUrls: ['./passions.component.scss'],
 })
 export class PassionsComponent implements OnInit {
-  progressMenu = [
+  contentItem = [
     {
-      progressId: 0,
-      prgressValue: 100,
-      prgressName: 'HTML',
+      contentId: 0,
+      contentTitle: 'Frontend',
+      contentText:
+        "Bonne maitrise de HTML, CSS, Bootstrap, JS. J'utilise les framework Angular. J'ai une sensibilité aux UX/UI avec l'envie de faire des sites web moderne, dynamique, et léger afin de réduire l'impact environnemental. Création du site d'inscription de Terre en Vie, du site mon site cv, des sites d'evaluation pour Digital Campus Studi, de site d'entrainement sur Front-end Mentor. Bonne connaissance de l'emploi des API ( IP- tracker utilise l'API https://geo.ipify.org/).",
     },
     {
-      progressId: 1,
-      prgressValue: 90,
-      prgressName: 'CSS / SCSS',
+      contentId: 1,
+      contentTitle: 'Backend',
+      contentText:
+        "Pour les sites de Terre en Vie, j'ai utilisé MySQL. Utilisation des clés externes, sessions, page login / password sécurisée, page mon compte extractant les créneaux de bénévolats de fonction de la personne qui se connecte, mailing. J'ai également une formation sur MongoDB. Coté langage, j'ai une bonne connaissance de PHP, mais j'ai une appétance pour NodeJS et ExpressJS. Découverte de Symfony 4.",
     },
     {
-      progressId: 2,
-      prgressValue: 75,
-      prgressName: 'Angular',
-    },
-    {
-      progressId: 3,
-      prgressValue: 80,
-      prgressName: 'JS',
-    },
-    {
-      progressId: 4,
-      prgressValue: 50,
-      prgressName: 'PHP',
-    },
-
-    {
-      progressId: 5,
-      prgressValue: 75,
-      prgressName: 'Server JS',
-    },
-    {
-      progressId: 6,
-      prgressValue: 75,
-      prgressName: 'Node JS',
-    },
-    {
-      progressId: 7,
-      prgressValue: 70,
-      prgressName: 'MongoDB',
-    },
-    {
-      progressId: 8,
-      prgressValue: 70,
-      prgressName: 'MySQL',
-    },
-    {
-      progressId: 9,
-      prgressValue: 70,
-      prgressName: 'Flutter',
-    },
-    {
-      progressId: 10,
-      prgressValue: 50,
-      prgressName: 'iOS',
+      contentId: 2,
+      contentTitle: 'Mobile',
+      contentText:
+        "La création de John d'oeuf est faite sur Flutter afin de le distribuer sur les plateformes iOS et Android. Néanmoins j'ai ungoût prononcé pour iOS et XCode. Utilisation sur XCode et Flutter d'API ( appli météo), création d'une messagerie simple type whatsapp, persistence de donnée ( appli de liste de courses)",
     },
   ];
   constructor() {}
@@ -71,5 +33,3 @@ export class PassionsComponent implements OnInit {
     AOS.init();
   }
 }
-
-
