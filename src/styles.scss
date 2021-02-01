@@ -2,7 +2,6 @@
 @import "~bulma/css/bulma.min.css";
 @import "~pattern.css/dist/pattern.min.css";
 
-
 $primary: #3285ef;
 $lightgray: hsl(0, 0%, 98%);
 $orange: #fea510;
@@ -18,6 +17,16 @@ h3 {
   color: $orange;
   font-family: "Pompiere", cursive;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h4 {
+  font-size: 1.5rem;
+  color: $orange;
+  font-family: "Pompiere", cursive;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

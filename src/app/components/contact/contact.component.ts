@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-contact',
@@ -7,11 +9,24 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.hasBackdrop = false;
+
+    let dialogRef = this.dialog.open(DialogComponent, {
+      width: '450px',
+      height: '200px',
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit() {}
   public sendEmail(e: Event) {
-    const modal = document.getElementsByClassName('modal');
     e.preventDefault();
     emailjs
       .sendForm(

@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PassionsComponent } from './components/passions/passions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     ProjectsComponent,
     PassionsComponent,
+    DialogComponent,
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule, BrowserAnimationsModule],
+  entryComponents: [DialogComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
