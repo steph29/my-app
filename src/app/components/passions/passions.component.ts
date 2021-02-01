@@ -71,3 +71,5 @@ export class PassionsComponent implements OnInit {
     AOS.init();
   }
 }
+
+

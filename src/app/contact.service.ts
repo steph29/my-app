@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ContactService {
-
-  constructor() { }
+  private url = 'http://localhost:4200/contact/send';
+  constructor(private http: HttpClientModule) {}
 }
