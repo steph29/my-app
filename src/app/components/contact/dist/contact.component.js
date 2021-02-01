@@ -8,13 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.ContactComponent = void 0;
 var core_1 = require("@angular/core");
+var emailjs_com_1 = require("emailjs-com");
 var ContactComponent = /** @class */ (function () {
     function ContactComponent() {
     }
     ContactComponent.prototype.ngOnInit = function () { };
-    ContactComponent.prototype.processForm = function () {
-        var myInfo = "Mon nom est " + this.name + ", mon email est " + this.email + ", et voici mon message: " + this.message;
-        alert(myInfo);
+    ContactComponent.prototype.sendEmail = function (e) {
+        var modal = document.getElementsByClassName('modal');
+        e.preventDefault();
+        emailjs_com_1["default"]
+            .sendForm('service_adysozh', 'template_9on6n8k', e.target, 'user_1cpdEQHngg0lEUgm4n1Ul')
+            .then(function (result) {
+            console.log(result.text);
+        }, function (error) {
+            console.log(error.text);
+        });
     };
     ContactComponent = __decorate([
         core_1.Component({
