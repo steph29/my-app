@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DialogComponent } from '../dialog/dialog.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +13,6 @@ export class ContactComponent implements OnInit {
 
   openDialog() {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.hasBackdrop = false;
 
     let dialogRef = this.dialog.open(DialogComponent, {
       width: '450px',
