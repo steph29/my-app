@@ -24,34 +24,11 @@
           </button>
         </mat-dialog-action>
       </div>
-      <div
-        *ngIf="alertWrong"
-        class="alert alert-danger alert-dismissible fade show has-text-centered w-50"
-        role="alert"
-      >
-        <h2 mat-dialog-title>OUPS</h2>
-        <mat-dialog-content
-          >Il manque des informations dans le formulaire</mat-dialog-content
-        >
-        <mat-dialog-action>
-          <button
-            (click)="closeAlert()"
-            mat-button
-            mat-dialog-close
-            mat-dialog-close="true"
-            class="btn-alert close"
-            type="button"
-            data-dismiss="alert"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </mat-dialog-action>
-      </div>
+
       <h3 class="has-text-centered">Vous désirez me contacter?</h3>
       <h4 class="has-text-centered mb-5">
         Où juste partager un café et discuter de vos projets? Alors n'hésitez
-        pas, écrivez-moi ! Promis je ne vous mangerai pas
+        pas, écrivez-moi ! Promis je ne vous mangerai pas ...
       </h4>
       <form class="contact-form" (submit)="sendEmail($event)">
         <div class="field">
@@ -82,12 +59,7 @@
           ></textarea>
         </div>
 
-        <button
-          type="submit"
-          value="Send"
-          (click)="openDialog()"
-          class="button is-medium is centered"
-        >
+        <button type="submit" value="Send" class="button is-medium is-centered">
           Envoyer le message avec material
         </button>
       </form>

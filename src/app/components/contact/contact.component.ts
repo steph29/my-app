@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DialogComponent } from './dialog/dialog.component';
-import { NgbModule, NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
-import { formatCurrency } from '@angular/common';
+import { NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-contact',
@@ -13,31 +10,16 @@ import { formatCurrency } from '@angular/common';
 })
 export class ContactComponent implements OnInit {
   alert: boolean = false;
-  alertWrong: boolean = false;
 
-  constructor(public dialog: MatDialog) {}
+  constructor() {}
 
-  openDialog() {
-    const dialogConfig = new MatDialogConfig();
-
-    let dialogRef = this.dialog.open(DialogComponent, {
-      width: '450px',
-      height: '200px',
-    });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
-
-  ngOnInit() {}
-  public sendEmail(e: Event) {
-    e.preventDefault();
+  public sendEmail(event: Event) {
+    event.preventDefault();
     emailjs
       .sendForm(
         'service_adysozh',
         'template_9on6n8k',
-        e.target as HTMLFormElement,
+        event.target as HTMLFormElement,
         'user_1cpdEQHngg0lEUgm4n1Ul'
       )
       .then(
@@ -53,4 +35,6 @@ export class ContactComponent implements OnInit {
   closeAlert() {
     this.alert = false;
   }
+
+  ngOnInit() {}
 }
