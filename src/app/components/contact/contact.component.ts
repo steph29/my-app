@@ -2,13 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
+import { NgbModule, NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
+import { formatCurrency } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
+  providers: [NgbAlertConfig],
 })
 export class ContactComponent implements OnInit {
+  alert: boolean = false;
+  alertWrong: boolean = false;
+
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
@@ -37,10 +43,14 @@ export class ContactComponent implements OnInit {
       .then(
         (result: EmailJSResponseStatus) => {
           console.log(result.text);
+          this.alert = true;
         },
         (error) => {
           console.log(error.text);
         }
       );
+  }
+  closeAlert() {
+    this.alert = false;
   }
 }
