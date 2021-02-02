@@ -30,6 +30,7 @@
         Où juste partager un café et discuter de vos projets? Alors n'hésitez
         pas, écrivez-moi ! Promis je ne vous mangerai pas ...
       </h4>
+
       <form class="contact-form" (submit)="sendEmail($event)">
         <div class="field">
           <input
@@ -38,6 +39,7 @@
             name="from_name"
             id="from_name"
             placeholder="Votre nom"
+            required
           />
         </div>
         <div class="field">
@@ -46,16 +48,18 @@
             name="user_email"
             class="input"
             placeholder="Votre email"
+            required
           />
         </div>
         <div class="field">
           <textarea
             type="text"
-            name="message"
+            name="message "
             class="textarea"
             rows="10"
             id="message"
             placeholder="Votre message"
+            required
           ></textarea>
         </div>
 
