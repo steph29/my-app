@@ -1,4 +1,6 @@
-$primary: #3285ef;
+@import "/src/styles.scss";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 .hero-one {
   background: url("/assets/images/freelance.jpg") fixed;
   background-size: cover;

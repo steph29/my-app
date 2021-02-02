@@ -13,7 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './components/contact/dialog/dialog.component';
 import { MatButtonModule } from '@angular/material/button';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({

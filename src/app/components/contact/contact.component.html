@@ -24,6 +24,31 @@
           </button>
         </mat-dialog-action>
       </div>
+      <div
+        *ngIf="alertWrong"
+        class="alert alert-danger alert-dismissible fade show has-text-centered w-50"
+        role="alert"
+        #alert
+      >
+        <h2 mat-dialog-title>OUPS</h2>
+        <mat-dialog-content
+          >Une erreur est survenue. Retentez votre chance !</mat-dialog-content
+        >
+        <mat-dialog-action>
+          <button
+            (click)="closeAlert()"
+            mat-button
+            mat-dialog-close
+            mat-dialog-close="true"
+            class="btn-alert close"
+            type="button"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </mat-dialog-action>
+      </div>
 
       <h3 class="has-text-centered">Vous désirez me contacter?</h3>
       <h4 class="has-text-centered mb-5">
@@ -31,41 +56,49 @@
         pas, écrivez-moi ! Promis je ne vous mangerai pas ...
       </h4>
 
-      <form class="contact-form" (submit)="sendEmail($event)">
-        <div class="field">
+      <form
+        #userForm="ngForm"
+        (ngSubmit)="validation(userForm.value, $event)"
+        class="contact-form"
+      >
+        <div class="form-group">
+          <h4>Votre prénom</h4>
           <input
             type="text"
-            class="input"
+            ngModel
             name="from_name"
-            id="from_name"
-            placeholder="Votre nom"
+            class="form-control mb-5"
             required
           />
-        </div>
-        <div class="field">
+          <h4>Votre email</h4>
           <input
-            type="email"
+            type="text"
+            ngModel
             name="user_email"
-            class="input"
-            placeholder="Votre email"
+            class="form-control mb-5"
             required
           />
-        </div>
-        <div class="field">
+          <h4>Votre Message</h4>
           <textarea
-            type="text"
-            name="message "
-            class="textarea"
+            ngModel
+            name="message"
+            class="form-control"
+            ngModel
+            name="message"
+            class="form-control mb-5"
             rows="10"
-            id="message"
-            placeholder="Votre message"
             required
-          ></textarea>
+          >
+          </textarea>
+          <br />
+          <button
+            type="submit"
+            value="Send"
+            class="button is-medium is-centered"
+          >
+            Envoyer le message avec material
+          </button>
         </div>
-
-        <button type="submit" value="Send" class="button is-medium is-centered">
-          Envoyer le message avec material
-        </button>
       </form>
     </div>
   </div>

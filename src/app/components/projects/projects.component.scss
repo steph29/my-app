@@ -1,9 +1,13 @@
 $primary: #3285ef;
+$orange: #fea510;
 p {
   font-size: 0.8rem;
   font-family: "Montserrat Alternates", sans-serif;
 }
 h2 {
+  font-size: 4rem;
+  color: $orange;
+  font-family: "Pompiere", cursive;
   font-weight: 750;
 }
 .striped {

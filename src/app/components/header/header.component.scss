@@ -1,3 +1,7 @@
+@import "/src/styles.scss";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~bulma/css/bulma.min.css";
+
 $primary: #3285ef;
 nav {
   height: 100px;
@@ -27,6 +31,9 @@ h2 {
   }
   list-style: none;
 }
+a {
+  font-size: 1.2rem;
+}
 .scale:hover {
   scale: 1.1;
   transition: 0.2s scale ease-in-out;
@@ -35,6 +42,7 @@ h2 {
 a:hover,
 a:active {
   color: $primary;
+  text-decoration: none;
 }
 .contact {
   font-weight: 800;
