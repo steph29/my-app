@@ -1,4 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "/src/styles.scss";
+
 $primary: #3285ef;
 .hero-one {
   background-image: url("/assets/images/laptop.jpg");
@@ -10,6 +12,7 @@ $primary: #3285ef;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  border: none;
   &:hover {
     background-color: $primary;
     scale: 1.05;
@@ -20,6 +23,10 @@ form {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+.alert {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {

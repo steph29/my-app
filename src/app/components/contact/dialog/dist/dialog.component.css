@@ -1,11 +1,9 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "/src/styles.scss";
-$primary: #3285ef;
 .dialog {
   background-color: white;
 }
+
 button {
-  background-color: $primary;
+  background-color: #3285ef;
   color: white;
   border-radius: 5px;
   font-weight: 700;

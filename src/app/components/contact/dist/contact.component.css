@@ -1,3 +1,4 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
 .hero-one {
   background-image: url("/assets/images/laptop.jpg");
   background-size: cover;
