@@ -72,10 +72,11 @@
           />
           <h4>Votre email</h4>
           <input
-            type="text"
+            type="email"
             ngModel
             name="user_email"
             class="form-control mb-5"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             required
           />
           <h4>Votre Message</h4>
@@ -95,6 +96,7 @@
             type="submit"
             value="Send"
             class="button is-medium is-centered"
+            [disabled]="userForm.invalid"
           >
             Envoyer le message avec material
           </button>
