@@ -11,7 +11,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { PassionsComponent } from './components/passions/passions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { DialogComponent } from './components/contact/dialog/dialog.component';
 import { MatButtonModule } from '@angular/material/button';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -24,9 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     ProjectsComponent,
     PassionsComponent,
-    DialogComponent,
   ],
-  entryComponents: [DialogComponent],
+
   imports: [
     BrowserModule,
     FormsModule,

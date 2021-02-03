@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact',

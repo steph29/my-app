@@ -10,8 +10,8 @@
     </div>
     <a
       (click)="toggleNavbar()"
-      #navBurger
       role="button"
+      #navBurger
       class="navbar-burger burger"
       aria-label="menu"
       aria-expanded="false"
@@ -22,7 +22,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu" id="nav-menu" #navMenu (click)="toggleNavbar()">
+  <div class="navbar-menu" id="nav-menu" #navMenu>
     <div class="navbar-start">
       <li
         *ngFor="let items of menuItems"
