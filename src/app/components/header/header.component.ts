@@ -1,10 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  ElementRef,
-  Renderer2,
-} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 declare var jquery: any;
 declare var $: any;
 
@@ -14,8 +8,9 @@ declare var $: any;
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @ViewChild('navBurger', { static: true }) navBurger = ElementRef;
-  @ViewChild('navMenu', { static: true }) navMenu = ElementRef;
+  @ViewChild('navBurger') navBurger!: ElementRef;
+  @ViewChild('navMenu')
+  navMenu!: ElementRef;
 
   menuItems = [
     { linkId: 1, linkName: 'home', linkUrl: '' },
@@ -23,12 +18,10 @@ export class HeaderComponent implements OnInit {
     { linkId: 3, linkName: 'la team', linkUrl: 'la-team' },
   ];
   buttonItems = [{ linkId: 4, linkName: 'contact', linkUrl: 'contact' }];
-
   toggleNavbar() {
     this.navBurger.nativeElement.classList.toggle('is-active');
     this.navMenu.nativeElement.classList.toggle('is-active');
   }
-
   constructor() {}
 
   ngOnInit(): void {}
