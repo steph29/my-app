@@ -1,3 +1,4 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
 .peas {
   background: radial-gradient(#fea510 1px, transparent 2px);
   background-size: 20px 20px;
