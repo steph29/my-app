@@ -70,3 +70,5 @@ export class ContactComponent implements OnInit {
     this.alert = false;
   }
 }
+
+

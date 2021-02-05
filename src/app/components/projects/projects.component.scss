@@ -20,8 +20,8 @@ h2 {
   );
 }
 img {
-  width: 400px;
-  height: 350px;
+  max-width: 400px;
+  max-height: 500px;
 }
 .imageAlign {
   justify-content: center;

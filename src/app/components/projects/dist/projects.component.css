@@ -4,6 +4,9 @@ p {
 }
 
 h2 {
+  font-size: 4rem;
+  color: #fea510;
+  font-family: "Pompiere", cursive;
   font-weight: 750;
 }
 
@@ -12,8 +15,12 @@ h2 {
 }
 
 img {
-  width: 400px;
-  height: 350px;
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.imageAlign {
+  justify-content: center;
 }
 
 [class*=reveal-] {
