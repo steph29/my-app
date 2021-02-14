@@ -1,12 +1,13 @@
 <section class="hero hero-one is-fullheight is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <h1>Stéphane VERARDO</h1>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <h2>web developper</h2>
-      </div>
+  <div class="container hero-body has-text-centered centeredElement">
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <img src="/assets/logo/Picto-FondBlanc_StephaneVerardo.svg" alt="">
+    </div>
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <h1>Stéphane VERARDO</h1>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <h2>web developper</h2>
     </div>
   </div>
 </section>
@@ -15,7 +16,7 @@
   data-aos="fade-up"
   data-aos-duration="2000"
 >
-  <div class="container .pattern-diagonal-lines-sm px-5">
+  <div class="container hero-body">
     <h2 class="has-text-centered subtitle-2" data-aos="zoom-in">
       Performances
     </h2>
@@ -26,8 +27,9 @@
     <div class="htrait"></div>
   </div>
 </section>
-<section class="hero hero-body hero-three striped">
-  <div class="has-text-centered">
+
+<section class="hero hero-three striped">
+  <div class="container">
     <h2
       class="has-text-centered subtitle-2"
       data-aos="fade-up"
@@ -35,25 +37,23 @@
     >
       Les offres
     </h2>
-    <div class="container columns .container.is-max-desktop is-dektop">
+    <div class="columns is-dektop">
       <div *ngFor="let item of cardContainerMenu">
-        <div class="column has-text-justified wrapper-container">
-          <div class="wrapper">
-            <h3 class="card-title has-text-centered is-bold">
-              {{ item.cardTitle }}
-            </h3>
-            <p class="card-text px-4">{{ item.cardBody }}</p>
-          </div>
+        <div class="column has-text-justified wrapper-container mx-4">
+          <h3 class="card-title has-text-centered">
+            {{ item.cardTitle }}
+          </h3>
+          <p class="card-text px-4">{{ item.cardBody }}</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="hero hero-body hero-two is-info">
-  <div class="container">
+<section class="hero hero-two is-info">
+  <div class="container hero-body">
     <div class="has-text-centered" data-aos="fade-up" data-aos-duration="2000">
-      <h2 class="has-text-centered subtitle">En quelques mots :</h2>
+      <h2 class="has-text-centered subtitle-3">En quelques mots :</h2>
       <div class=".container.is-max-desktop columns is-dektop">
         <div
           class="column has-text-centered"

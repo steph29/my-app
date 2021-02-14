@@ -1,25 +1,37 @@
-h1 {
-  margin-left: 1rem;
-  color: lightgray;
-  font-weight: 800;
-  font-family: "Montserrat", sans-serif;
+nav {
+  height: 100px;
+  background-color: black;
 }
 
-.contactButton {
-  margin-top: auto;
-  margin-bottom: auto;
+h1 {
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  color: lightgray;
+  font-weight: 800;
+  font-family: "Pompiere", cursive;
+}
+
+img {
+  max-height: 4rem;
 }
 
 h2 {
   color: lightgray;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Pompiere", cursive;
   font-weight: 800;
 }
 
-.collpase {
-  margin-top: auto;
-  margin-bottom: auto;
+.navbar-brand {
+  padding-top: 1.5rem;
+}
+
+.navbar-menu {
+  background-color: black;
+}
+
+.navbar-burger {
+  position: none;
 }
 
 .navbar-nav {
@@ -30,16 +42,25 @@ h2 {
   display: inline;
 }
 
+.scale:hover {
+  scale: 1.1;
+  -webkit-transition: 0.2s scale ease-in-out;
+  transition: 0.2s scale ease-in-out;
+}
+
+a:hover,
+a:active {
+  color: #3285ef;
+}
+
 .contact {
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.contact:hover {
-  color: #3285ef;
-}
-
-.contact:active {
-  color: #3285ef;
+@media screen and (min-width: 769px) {
+  .navbar-brand {
+    padding-top: 0;
+  }
 }
 /*# sourceMappingURL=header.component.css.map */

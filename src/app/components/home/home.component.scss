@@ -4,10 +4,6 @@ $primary: #3285ef;
 $lightgray: hsl(0, 0%, 98%);
 $orange: #fea510;
 
-.peas {
-  background: radial-gradient($orange 1px, transparent 2px);
-  background-size: 20px 20px;
-}
 .striped {
   background: repeating-linear-gradient(
     45deg,
@@ -18,19 +14,15 @@ $orange: #fea510;
   );
 }
 
-h1 {
-  font-size: 6rem;
-  color: white;
-  font-family: "Pompiere", cursive;
+img {
+  width: 100px;
 }
-h2 {
-  font-size: 4rem;
-  color: $orange;
-  font-family: "Pompiere", cursive;
-}
-
 p {
   font-family: "Montserrat Alternates", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
 }
 .hero-one {
   background-image: url("/assets/images/laptop.jpg") !important;
@@ -38,8 +30,13 @@ p {
   background-position: center center;
   background-attachment: fixed;
 }
+.hero-body {
+  display: flex;
+  flex-direction: column;
+}
 .trait {
   border-left: 1px solid $lightgray;
+  height: 30%;
 }
 .htrait {
   padding-top: 6rem;
@@ -49,6 +46,10 @@ p {
 .subtitle-2 {
   padding-bottom: 2rem;
   color: $orange;
+}
+.subtitle-3 {
+  padding-bottom: 2rem;
+  color: white;
 }
 .columns:last-child {
   margin-bottom: 0;
@@ -63,10 +64,6 @@ img {
 }
 .hero-three {
   align-items: center;
-  margin-bottom: 6rem;
-  margin-top: 6rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
 }
 .hero-four {
   margin-bottom: 6rem;
@@ -84,35 +81,18 @@ h3 {
 .white {
   color: $lightgray;
 }
-.wrapper {
-  width: 400px;
-}
+
 .wrapper-container {
   background-color: white;
-  margin: 20px;
-  vertical-align: middle;
+  padding-right: 5px;
   margin-bottom: 3rem;
-  height: 100%;
+  max-width: 600px;
 }
-[class*="reveal-"] {
-  opacity: 0;
-  transform: translateY(60px);
-}
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1s ease-in-out;
-}
-.reveal-2 {
-  transition-delay: 0.1s;
-}
-.reveal-3 {
-  transition-delay: 0.2s;
-}
+
 @media screen and(max-width: 768px) {
   .trait {
     border-left: none;
-    border-top: 1px solid $primary;
+    border-top: 1px solid $lightgray;
     margin-top: 6rem;
     padding-top: 3rem;
     margin-left: 2rem;
@@ -124,15 +104,12 @@ h3 {
     border-left: none;
   }
   h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
   }
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal [class*="reveal-"] {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+  .container {
+    max-width: 100%;
   }
 }

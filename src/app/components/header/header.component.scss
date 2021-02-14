@@ -2,6 +2,7 @@ $primary: #3285ef;
 
 nav {
   height: 100px;
+  background-color: black;
 }
 h1 {
   font-size: 2rem;
@@ -9,6 +10,9 @@ h1 {
   color: lightgray;
   font-weight: 800;
   font-family: "Pompiere", cursive;
+}
+img {
+  max-height: 4rem;
 }
 h2 {
   color: lightgray;

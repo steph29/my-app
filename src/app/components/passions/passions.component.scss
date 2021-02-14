@@ -1,10 +1,14 @@
 @import "/src/styles.scss";
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
+/*  */
 .hero-one {
   background: url("/assets/images/freelance.jpg") fixed;
   background-size: cover;
   background-position: center center;
+}
+.hero-body {
+  display: flex;
+  flex-direction: column;
 }
 .striped {
   background: repeating-linear-gradient(
@@ -15,46 +19,14 @@
     transparent 15px
   );
 }
-.peas {
-  background: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 2px);
-  background-size: 15px 15px;
-  max-width: 100pc;
-}
-h1 {
-  color: #fea510;
-}
-progress {
-  max-width: 100pc;
-  background-color: #fea510;
+
+.container {
+  width: 80%;
 }
 .trait {
   background-color: #fff;
 }
-h3 {
-  color: #fea510;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-[class*="reveal-"] {
-  opacity: 0;
-  transform: translateY(60px);
-}
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: 1s ease-in-out;
-}
-.reveal-2 {
-  transition-delay: 0.1s;
-}
-.container-center {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  margin-bottom: 1.5rem;
-}
+
 .wrapper-container {
   background-color: #fff;
   margin-bottom: 1.5rem;
@@ -63,11 +35,23 @@ h3 {
 }
 .hero-three {
   align-items: center;
-  margin-bottom: 6rem;
-  margin-top: 6rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .subtitle-2 {
   padding-bottom: 2rem;
+}
+@media screen and (max-width: 375px) {
+  .trait {
+    border-left: none;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  .container {
+    max-width: 100%;
+  }
 }

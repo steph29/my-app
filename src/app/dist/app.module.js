@@ -20,7 +20,6 @@ var projects_component_1 = require("./components/projects/projects.component");
 var passions_component_1 = require("./components/passions/passions.component");
 var animations_1 = require("@angular/platform-browser/animations");
 var dialog_1 = require("@angular/material/dialog");
-var dialog_component_1 = require("./components/contact/dialog/dialog.component");
 var button_1 = require("@angular/material/button");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 var AppModule = /** @class */ (function () {
@@ -36,9 +35,7 @@ var AppModule = /** @class */ (function () {
                 contact_component_1.ContactComponent,
                 projects_component_1.ProjectsComponent,
                 passions_component_1.PassionsComponent,
-                dialog_component_1.DialogComponent,
             ],
-            entryComponents: [dialog_component_1.DialogComponent],
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
