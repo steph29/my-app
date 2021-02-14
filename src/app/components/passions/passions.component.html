@@ -1,20 +1,16 @@
-<section class="hero hero-one is-fullheight is-bold">
-  <div class="hero-body">
-    <div class="container">
-      
-
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <h1>La Big Team</h1>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <h2>Mais qui se cache derrière cette tasse ?</h2>
-      </div>
+<section class="hero hero-one is-fullheight">
+  <div class="container hero-body centeredElement">
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <h1>La Big Team</h1>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="2000">
+      <h2>Mais qui se cache derrière cette tasse ?</h2>
     </div>
   </div>
 </section>
 
-<section class="hero hero-body hero-three striped">
-  <div class="has-text-centered">
+<section class="hero hero-three striped">
+  <div class="container">
     <h2
       class="has-text-centered subtitle-2"
       data-aos="fade-up"
@@ -22,15 +18,13 @@
     >
       Mes compétences
     </h2>
-    <div class="container columns .container.is-max-desktop is-dektop">
+    <div class="columns is-dektop">
       <div *ngFor="let item of contentItem">
-        <div class="column has-text-justified wrapper-container">
-          <div class="wrapper">
-            <h3 class="card-title has-text-centered is-bold">
-              {{ item.contentTitle }}
-            </h3>
-            <p class="card-text px-4">{{ item.contentText }}</p>
-          </div>
+        <div class="column has-text-justified wrapper-container mx-4">
+          <h3 class="card-title has-text-centered">
+            {{ item.contentTitle }}
+          </h3>
+          <p class="card-text px-4">{{ item.contentText }}</p>
         </div>
       </div>
     </div>
