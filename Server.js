@@ -1,52 +1,56 @@
-const app = require("./backend/app");
-const debug = require("debug")("node-angular");
-const http = require("http");
+//import modules installed at the previous step. We need them to run Node.js server and send emails
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
 
-const normalizePort = val => {
-  var port = parseInt(val, 10);
+// create a new Express application instance
+const app = express();
 
-  if (isNaN(port)) {
-    // named pipe
-    return val;
-  }
+//configure the Express middleware to accept CORS requests and parse request body into JSON
+app.use(cors({ origin: "*" }));
+app.use(bodyParser.json());
 
-  if (port >= 0) {
-    // port number
-    return port;
-  }
 
-  return false;
+const sendMail = (user, callback) => {
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: "s.verardo29@gmail.com",
+      pass: "Ywdt7w2013g",
+    },
+  });
+  transporter.sendMail(mailOptions, callback);
 };
 
-const onError = error => {
-  if (error.syscall !== "listen") {
-    throw error;
-  }
-  const bind = typeof port === "string" ? "pipe " + port : "port " + port;
-  switch (error.code) {
-    case "EACCES":
-      console.error(bind + " requires elevated privileges");
-      process.exit(1);
-      break;
-    case "EADDRINUSE":
-      console.error(bind + " is already in use");
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
+const mailOptions = {
+  from: `"Stéphane Verardo", "s.verardo29@gmail.com"`,
+  to: `fingolfin3529@gmail.com`,
+  subject: "Bonjour",
+  html: "<h1>And here is the place for HTML</h1>",
 };
 
-const onListening = () => {
-  const addr = server.address();
-  const bind = typeof port === "string" ? "pipe " + port : "port " + port;
-  debug("Listening on " + bind);
-};
 
-const port = normalizePort(process.env.PORT || "3000");
-app.set("port", port);
+// define a sendmail endpoint, which will send emails and response with the corresponding status
+app.post("/sendmail", (req, res) => {
+  console.log("request came");
+  let user = req.body;
+  sendMail(user, (err, info) => {
+    if (err) {
+      console.log(err);
+      res.status(400);
+      res.send({ error: "Failed to send email" });
+    } else {
+      console.log("Email has been sent");
+      res.send(info);
+    }
+  });
+});
 
-const server = http.createServer(app);
-server.on("error", onError);
-server.on("listening", onListening);
-server.listen(port);
+
+//start application server on port 3000
+app.listen(3000, () => {
+  console.log("The server started on port 3000");
+});

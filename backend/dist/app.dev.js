@@ -36,7 +36,7 @@ function sendEmail(mailOptions) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          transporter = nodemailer.createTransport(config.smtpOptions);
+          transporter = nodemailer.createTransport(config.mailOptions);
           _context.next = 3;
           return regeneratorRuntime.awrap(transporter.sendMail(mailOptions));
 

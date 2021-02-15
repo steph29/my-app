@@ -37,19 +37,19 @@ app.use((req, res, next) => {
 });
 
 async function sendEmail(mailOptions) {
-  const transporter = nodemailer.createTransport(config.smtpOptions);
+  const transporter = nodemailer.createTransport(config.mailOptions);
   await transporter.sendMail(mailOptions);
 }
 
 app.use("/contact/send", (req, res, next) => {
   res.status(200).send(
-     sendEmail(mailOptions, function (err, data) {
+    sendEmail(mailOptions, function (err, data) {
       if (err) {
         console.log("Error : ", err);
       } else {
         console.log("Email sent !!!");
       }
-    })  
+    })
   );
 });
 
