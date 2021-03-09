@@ -5,6 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ContactService {
-  private url = 'http://localhost:4200/contact/send';
+  // private url = 'http://localhost:4200/contact/send';
   constructor(private http: HttpClientModule) {}
 }

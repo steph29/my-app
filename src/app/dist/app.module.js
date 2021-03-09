@@ -46,6 +46,7 @@ var AppModule = /** @class */ (function () {
                 ng_bootstrap_1.NgbModule,
             ],
             providers: [],
+            entryComponents: [dialog_1.MatDialogModule],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

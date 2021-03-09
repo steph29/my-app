@@ -37,6 +37,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
   ],
   providers: [],
+  entryComponents:[MatDialogModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

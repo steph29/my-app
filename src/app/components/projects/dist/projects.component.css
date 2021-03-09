@@ -34,6 +34,8 @@ h2 {
 
 .striped {
   background: repeating-linear-gradient(45deg, #ececec 0, #ececec 2px, transparent 2px, transparent 8px);
+  justify-content: center;
+  align-items: center;
 }
 
 .marge {
@@ -45,12 +47,18 @@ img {
   max-height: 500px;
 }
 
-.imageAlign {
-  justify-content: center;
+strong {
+  font-weight: normal;
 }
 
 .columns {
   display: flex;
+}
+
+.column {
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {

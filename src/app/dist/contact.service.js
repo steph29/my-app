@@ -9,9 +9,9 @@ exports.__esModule = true;
 exports.ContactService = void 0;
 var core_1 = require("@angular/core");
 var ContactService = /** @class */ (function () {
+    // private url = 'http://localhost:4200/contact/send';
     function ContactService(http) {
         this.http = http;
-        this.url = 'http://localhost:4200/contact/send';
     }
     ContactService = __decorate([
         core_1.Injectable({

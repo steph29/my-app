@@ -37,6 +37,8 @@ h2 {
     transparent 2px,
     transparent 8px
   );
+  justify-content: center;
+  align-items: center;
 }
 .marge {
   margin-top: 6rem;
@@ -45,13 +47,17 @@ img {
   max-width: 400px;
   max-height: 500px;
 }
-.imageAlign {
-  justify-content: center;
+strong {
+  font-weight: normal;
 }
 .columns {
   display: flex;
 }
-
+.column {
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 2rem;

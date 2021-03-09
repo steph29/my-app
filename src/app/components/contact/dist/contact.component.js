@@ -10,6 +10,7 @@ exports.ContactComponent = void 0;
 var core_1 = require("@angular/core");
 var emailjs_com_1 = require("emailjs-com");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
+var dialog_1 = require("@angular/material/dialog");
 var ContactComponent = /** @class */ (function () {
     function ContactComponent() {
         this.alert = false;
@@ -62,7 +63,7 @@ var ContactComponent = /** @class */ (function () {
             selector: 'app-contact',
             templateUrl: './contact.component.html',
             styleUrls: ['./contact.component.scss'],
-            providers: [ng_bootstrap_1.NgbAlertConfig]
+            providers: [ng_bootstrap_1.NgbAlertConfig, dialog_1.MatDialog]
         })
     ], ContactComponent);
     return ContactComponent;
