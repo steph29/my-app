@@ -35,6 +35,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatDialogModule,
     MatButtonModule,
     NgbModule,
+    
   ],
   providers: [],
   entryComponents:[MatDialogModule],

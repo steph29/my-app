@@ -24,6 +24,10 @@ p {
   width: 80%;
   margin: auto;
 }
+.smallContainer {
+  max-width: 50%;
+  margin: auto;
+}
 .hero-one {
   background-image: url("/assets/images/laptop.jpg") !important;
   background-size: cover;
@@ -36,11 +40,11 @@ p {
 }
 .trait {
   border-left: 1px solid $lightgray;
-  height: 30%;
+  height: 30rem;
 }
 .htrait {
-  padding-top: 6rem;
-  border-bottom: 1px solid $primary;
+  padding-top: 4rem;
+  border-top: 1px solid $primary;
 }
 
 .subtitle-2 {
@@ -64,10 +68,23 @@ img {
 }
 .hero-three {
   align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .hero-four {
-  margin-bottom: 6rem;
-  margin-top: 6rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.button {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: none;
+  &:hover {
+    background-color: $primary;
+    scale: 1.05;
+    transition: 0.1s scale ease-in-out;
+  }
 }
 li {
   list-style: none;
@@ -97,6 +114,7 @@ h3 {
     padding-top: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    height: auto;
   }
 }
 @media screen and (max-width: 375px) {

@@ -1,7 +1,19 @@
 img {
   width: 15px;
 }
-footer {
-  height: 60px;
-  padding: 2rem 2rem 5rem;
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+}
+.hero-three {
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.picto {
+  width: 30px;
+}
+.column {
+  flex-basis: auto;
 }

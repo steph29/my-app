@@ -26,13 +26,23 @@ h1 {
   color: white;
   font-family: "om_telolet_omregular", sans-serif;
 }
-h2,
-h3 {
+h2 {
   font-size: 3rem;
+  color: $orange;
+  font-family: "om_telolet_omregular", sans-serif;
+}
+h3 {
+  color: $orange;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+h4 {
+  font-size: 1.5rem;
   color: $orange;
   font-family: "Pompiere", sans-serif;
 }
-h4 {
+h5 {
   font-size: 1.5rem;
   color: $orange;
   font-family: "Pompiere", sans-serif;
