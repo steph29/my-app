@@ -24,7 +24,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     ProjectsComponent,
     PassionsComponent,
-
   ],
 
   imports: [
@@ -35,10 +34,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatDialogModule,
     MatButtonModule,
     NgbModule,
-    
+
   ],
   providers: [],
-  entryComponents:[MatDialogModule],
+  entryComponents: [MatDialogModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

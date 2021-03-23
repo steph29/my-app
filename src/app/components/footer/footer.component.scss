@@ -17,3 +17,11 @@ img {
 .column {
   flex-basis: auto;
 }
+
+.littleFooter p,
+.littleFooter a {
+  font-size: small;
+  font-size: 0.8rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: rgb(73, 73, 73);
+}
