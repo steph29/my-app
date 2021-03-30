@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  providers: [NgbAlertConfig, MatDialog],
+  providers: [NgbAlertConfig, MatDialogModule],
 })
 export class ContactComponent implements OnInit {
   alert: boolean = false;
