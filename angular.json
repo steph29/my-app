@@ -26,6 +26,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+<<<<<<< Updated upstream
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -35,6 +36,10 @@
               "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
+=======
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["node_modules/aos/dist/aos.css", "src/styles.scss"],
+>>>>>>> Stashed changes
             "scripts": []
           },
           "configurations": {
