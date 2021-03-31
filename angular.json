@@ -26,8 +26,6 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -141,6 +139,6 @@
   },
   "defaultProject": "my-app",
   "cli": {
-    "analytics": "d76762cf-a8a7-468d-ba66-a4cf1143cd44"
+    "analytics": false
   }
 }
