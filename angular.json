@@ -35,9 +35,6 @@
               "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
-
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["node_modules/aos/dist/aos.css", "src/styles.scss"],
             "scripts": []
           },
           "configurations": {
