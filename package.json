@@ -21,19 +21,10 @@
     "@angular/platform-browser": "~11.0.6",
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     "@fortawesome/angular-fontawesome": "^0.8.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@ng-bootstrap/ng-bootstrap": "^9.0.2",
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     "aos": "^2.3.4",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
