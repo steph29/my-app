@@ -27,6 +27,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -37,6 +38,8 @@
               "src/styles.scss"
             ],
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             "assets": ["src/favicon.ico", "src/assets"],
