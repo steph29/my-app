@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  providers: [NgbAlertConfig, MatDialog],
+  providers: [NgbAlertConfig],
 })
 export class ContactComponent implements OnInit {
   alert: boolean = false;
@@ -70,3 +70,5 @@ export class ContactComponent implements OnInit {
     this.alert = false;
   }
 }
+
+

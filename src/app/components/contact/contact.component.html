@@ -9,7 +9,7 @@
       >
         <h2 mat-dialog-title>MERCI</h2>
         <mat-dialog-content>Votre message a bien été envoyé</mat-dialog-content>
-        <mat-dialog-action>
+        <mat-dialog-actions>
           <button
             (click)="closeAlert()"
             mat-button
@@ -22,7 +22,7 @@
           >
             <span aria-hidden="true">&times;</span>
           </button>
-        </mat-dialog-action>
+        </mat-dialog-actions>
       </div>
       <div
         *ngIf="alertWrong"
@@ -34,7 +34,7 @@
         <mat-dialog-content
           >Une erreur est survenue. Retentez votre chance !</mat-dialog-content
         >
-        <mat-dialog-action>
+        <mat-dialog-actions>
           <button
             (click)="closeAlert()"
             mat-button
@@ -47,7 +47,7 @@
           >
             <span aria-hidden="true">&times;</span>
           </button>
-        </mat-dialog-action>
+        </mat-dialog-actions>
       </div>
 
       <h3 class="has-text-centered pt-5">Vous désirez me contacter?</h3>
