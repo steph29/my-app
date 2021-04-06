@@ -11,61 +11,26 @@ var core_1 = require("@angular/core");
 var aos_1 = require("aos");
 var PassionsComponent = /** @class */ (function () {
     function PassionsComponent() {
-        this.progressMenu = [
+        this.contentItem = [
             {
-                progressId: 0,
-                prgressValue: 100,
-                prgressName: 'HTML'
+                contentId: 0,
+                contentTitle: "l'aéronautique",
+                contentText: 'Passionné depuis tout petit par tout ce qui vole dans le ciel, '
             },
             {
-                progressId: 1,
-                prgressValue: 90,
-                prgressName: 'CSS / SCSS'
+                contentId: 1,
+                contentTitle: 'la course à pied',
+                contentText: "Pour les sites de Terre en Vie, j'ai utilisé MySQL. Utilisation des clés externes, sessions, page login / password sécurisée, page mon compte extractant les créneaux de bénévolats de fonction de la personne qui se connecte, mailing. J'ai également une formation sur MongoDB. Coté langage, j'ai une bonne connaissance de PHP, mais j'ai une appétance pour NodeJS et ExpressJS. Découverte de Symfony 4."
             },
             {
-                progressId: 2,
-                prgressValue: 75,
-                prgressName: 'Angular'
+                contentId: 2,
+                contentTitle: 'la vie',
+                contentText: ''
             },
             {
-                progressId: 3,
-                prgressValue: 80,
-                prgressName: 'JS'
-            },
-            {
-                progressId: 4,
-                prgressValue: 50,
-                prgressName: 'PHP'
-            },
-            {
-                progressId: 5,
-                prgressValue: 75,
-                prgressName: 'Server JS'
-            },
-            {
-                progressId: 6,
-                prgressValue: 75,
-                prgressName: 'Node JS'
-            },
-            {
-                progressId: 7,
-                prgressValue: 70,
-                prgressName: 'MongoDB'
-            },
-            {
-                progressId: 8,
-                prgressValue: 70,
-                prgressName: 'MySQL'
-            },
-            {
-                progressId: 9,
-                prgressValue: 70,
-                prgressName: 'Flutter'
-            },
-            {
-                progressId: 10,
-                prgressValue: 50,
-                prgressName: 'iOS'
+                contentId: 3,
+                contentTitle: "l'écologie",
+                contentText: "Engagé de la première heure, je m'investi dans les associations comme Terre en Vie, pour défendre l'écologie et l'environnement. Directeur de l'entreprise Baladoù, nous avons créé un carnet de randonnées itinérant pour découvrir le pays de Vannes autrement"
             },
         ];
     }
