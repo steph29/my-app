@@ -2,8 +2,38 @@ img {
   width: 15px;
 }
 
-footer {
-  height: 60px;
-  padding: 2rem 2rem 5rem;
+.hero-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-three {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.picto {
+  width: 30px;
+}
+
+.column {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.littleFooter p,
+.littleFooter a {
+  font-size: small;
+  font-size: 0.8rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #494949;
 }
 /*# sourceMappingURL=footer.component.css.map */

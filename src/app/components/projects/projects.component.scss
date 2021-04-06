@@ -53,6 +53,15 @@ strong {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.background {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  transform: rotate(2deg);
+  border-radius: 30px;
+}
+.grayBackground {
+  background: #ececec;
+  border-radius: 30px;
+}
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 2rem;
