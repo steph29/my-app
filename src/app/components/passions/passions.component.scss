@@ -1,5 +1,6 @@
 @import "/src/styles.scss";
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 /*  */
 .hero-one {
   background: url("/assets/images/freelance.jpg") fixed;
@@ -23,10 +24,32 @@
 .container {
   width: 80%;
 }
-.trait {
-  background-color: #fff;
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.trait {
+  border-bottom: 1px solid $primary;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.icon {
+  width: 4rem;
+  height: 2rem;
+}
+.traith {
+  border-left: 1px solid $primary;
+  width: 1px;
+  height: 80px;
+  margin-right: 3rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.text {
+  margin-top: 4rem;
+}
 .wrapper-container {
   background-color: #fff;
   margin-bottom: 1.5rem;

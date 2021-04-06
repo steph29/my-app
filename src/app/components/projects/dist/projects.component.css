@@ -17,6 +17,13 @@ h2 {
   width: 80%;
 }
 
+.trait {
+  border-left: 1px solid #3285ef;
+  margin: auto;
+  height: 250px;
+  transform: translate(0, 45px);
+}
+
 .hero-body {
   display: flex;
   flex-direction: column;
@@ -85,7 +92,7 @@ strong {
 }
 
 .background3 {
-  background-image: linear-gradient(135deg, #69ff97 10%, #00e4ff 100%);
+  background: linear-gradient(135deg, #fad961 0%, #fea510 100%);
   transform: rotate(2deg);
   border-radius: 30px;
 }
@@ -97,7 +104,7 @@ strong {
 }
 
 .background5 {
-  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  background: linear-gradient(135deg, #c3ec52 0%, #0ba29d 100%);
   transform: rotate(2deg);
   border-radius: 30px;
 }

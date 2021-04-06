@@ -19,6 +19,9 @@ $primary: #3285ef;
     transition: 0.1s scale ease-in-out;
   }
 }
+.white {
+  color: $primary;
+}
 form {
   width: 50%;
   margin-left: auto;

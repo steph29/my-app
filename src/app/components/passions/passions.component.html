@@ -10,23 +10,24 @@
 </section>
 
 <section class="hero hero-three">
-  <div class="container">
-    <h2
-      class="has-text-centered subtitle-2"
-      data-aos="fade-up"
-      data-aos-duration="2000"
-    >
-      Mes centres d'intérêts
-    </h2>
-    <div class="columns is-dektop">
+  <div class="container" data-aos="fade-up" data-aos-duration="2000">
+    <h2 class="has-text-centered subtitle-2">Mes centres d'intérêts</h2>
+    <div class="trait"></div>
+    <div class="is-dektop" data-aos="fade-up" data-aos-duration="2000">
       <div *ngFor="let item of contentItem">
-        <div class="column has-text-justified wrapper-container mx-4">
-          <h3 class="card-title has-text-centered">
-            {{ item.contentTitle }}
-          </h3>
+        <div class="has-text-centered wrapper-container mx-4 text">
+          <div class="grid">
+            <img src="{{ item.contentIcon }}" alt="" class="icon" />
+            <h3 class="card-title has-text-centered">
+              {{ item.contentTitle }}
+            </h3>
+          </div>
+
           <p class="card-text px-4">{{ item.contentText }}</p>
         </div>
+        <div class="traith"></div>
       </div>
+      <h3 class="has-text-centered mt-5">Et tellement plus ... </h3>
     </div>
   </div>
 </section>
