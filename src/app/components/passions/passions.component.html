@@ -13,9 +13,13 @@
   <div class="container" data-aos="fade-up" data-aos-duration="2000">
     <h2 class="has-text-centered subtitle-2">Mes centres d'intérêts</h2>
     <div class="trait"></div>
-    <div class="is-dektop" data-aos="fade-up" data-aos-duration="2000">
+    <div class="is-dektop">
       <div *ngFor="let item of contentItem">
-        <div class="has-text-centered wrapper-container mx-4 text">
+        <div
+          class="has-text-centered wrapper-container mx-4 text"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <div class="grid mb-4">
             <img src="{{ item.contentIcon }}" alt="" class="icon" />
             <h3 class="card-title has-text-centered">
