@@ -9,191 +9,52 @@
   </div>
 </section>
 
-<section class="hero hero-body is-fullheight mt-5">
-  <div class="container marge" data-aos="fade-up" data-aos-duration="2000">
-    <div class="grayBackground">
-      <div class="columns background1">
-        <div class="column is-half first p-5">
-          <div class="is-centered image imgLeft">
-            <img src="/assets/images/mockupMacbookTEV.png" alt="" />
-          </div>
-        </div>
-        <div class="column is-half second">
-          <a
-            href="https://www.terreenvie.com/benevoles/inscription.php"
-            target="_blank"
-            ><h2 class="column has-text-centered textRight">Terre En Vie</h2></a
-          >
-          <p class="has-text-justified has-text-centered textRight">
-            L'association <strong>Terre en vie</strong> regroupe chaque année
-            plus de 200 bénévoles qu'il faut répartir sur plus de 30 postes
-            différents à plus de 40 créneaux horaires. J'ai donc fait un
-            gestionnaire en HTML/CSS - Bootstrap - PHP - AJAX - JQuery afin de
-            répondre à leur demande. Nous retrouvons les fonctionnalités
-            suivantes: <br />
-            - inscription <br />- Connexion <strong>sécurisé</strong> <br />-
-            Modification de mot de passe via un code envoyé par mail <br />-
-            Choix de créneaux de bénévolats par jour, poste et heure <br />-
-            Enregistrement en temps réel dans une BDD <br />- Modification des
-            créneaux de bénévolats à convenance <br />- Envoie d'un mail de
-            confirmation et sur demande dans la page " Mon Compte".
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="trait"></div>
-  <div class="container marge" data-aos="fade-up" data-aos-duration="2000">
-    <div class="grayBackground">
-      <div class="columns background2">
-        <div class="column is-half p-5">
-          <a href="#" target="_blank"
-            ><h2 class="column has-text-centered textLeft">
-              Epicerie associative <br />
-              "Régal d'Epissure"
-            </h2></a
-          >
-          <p class="has-text-justified has-text-centered textLeft">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            architecto eos culpa labore modi cum veniam sequi a id excepturi
-            maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus
-            neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque,
-            cupiditate aliquam odit amet similique deserunt aperiam fugit harum
-            rem, a quis cum qui dicta voluptatibus officia repellendus vel esse
-            porro doloremque explicabo? Repudiandae saepe qui eum similique nemo
-            in, molestiae unde voluptate! Consequuntur eaque, qui quam,
-            obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum
-            aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam
-            illo. Blanditiis in sequi quo, perferendis, corporis ullam
-            exercitationem magnam laborum necessitatibus ab aliquid
-            voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem
-            illo, quisquam quos laboriosam doloremque eaque cupiditate
-            praesentium a iusto? Maiores.
-          </p>
-        </div>
-        <div class="hero-body column is-half p-5 imgRight">
-          <div class="image is-centered">
-            <div class="">
-              <img src="/assets/images/mockupImacEpissure.png" alt="" />
+<section class="hero hero-body is-fullheight">
+  <div *ngFor="let item of projectsItems">
+    <div class="container marge" data-aos="fade-up" data-aos-duration="2000">
+      <div class="grayBackground">
+        <div *ngIf="item.projectId % 2 == 0; then pair; else impair"></div>
+        <ng-template #pair>
+          <div class="columns background1">
+            <div class="column is-half first p-5">
+              <div class="is-centered image imgLeft">
+                <img src="{{ item.projectImage }}" alt="Placeholder image" />
+              </div>
+            </div>
+            <div class="column is-half second">
+              <a href="{{ item.projectUrl }}" target="_blank"
+                ><h2 class="column has-text-centered textRight">
+                  {{ item.projectTitle }}
+                </h2></a
+              >
+              <p class="has-text-justified has-text-centered textRight">
+                {{ item.projectText }}
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="trait"></div>
+        </ng-template>
 
-  <div class="container marge" data-aos="fade-up" data-aos-duration="2000">
-    <div class="grayBackground">
-      <div class="columns background3">
-        <div class="hero-body column is-half first p-5">
-          <div class="image is-centered imgLeft">
-            <div class="">
-              <img src="/assets/images/mockupIphoneJohnDOeuf.png" alt="" />
+        <ng-template #impair>
+          <div class="columns background2">
+            <div class="column is-half p-5">
+              <a href="{{ item.projectUrl }}" target="_blank"
+                ><h2 class="column has-text-centered textLeft">
+                  {{ item.projectTitle }}
+                </h2></a
+              >
+              <p class="has-text-justified has-text-centered textLeft">
+                {{ item.projectText }}
+              </p>
+            </div>
+            <div class="column is-half p-5">
+              <div class="is-centered image imgRight">
+                <img src="{{ item.projectImage }}" alt="Placeholder image" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="column is-half p-5">
-          <a
-            href="https://apps.apple.com/kn/app/john-doeuf/id1520277206"
-            target="_blank"
-            ><h2 class="column has-text-centered textRight">John d'oeuf</h2></a
-          >
-          <p class="has-text-justified has-text-centered textRight">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            architecto eos culpa labore modi cum veniam sequi a id excepturi
-            maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus
-            neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque,
-            cupiditate aliquam odit amet similique deserunt aperiam fugit harum
-            rem, a quis cum qui dicta voluptatibus officia repellendus vel esse
-            porro doloremque explicabo? Repudiandae saepe qui eum similique nemo
-            in, molestiae unde voluptate! Consequuntur eaque, qui quam,
-            obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum
-            aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam
-            illo. Blanditiis in sequi quo, perferendis, corporis ullam
-            exercitationem magnam laborum necessitatibus ab aliquid
-            voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem
-            illo, quisquam quos laboriosam doloremque eaque cupiditate
-            praesentium a iusto? Maiores.
-          </p>
-        </div>
+        </ng-template>
       </div>
-    </div>
-  </div>
-  <div class="trait"></div>
-
-  <div class="container marge" data-aos="fade-up" data-aos-duration="2000">
-    <div class="grayBackground">
-      <div class="columns background4">
-        <div class="column is-half p-5">
-          <a href="#" target="_blank"
-            ><h2 class="column has-text-centered textLeft">IP tracker</h2></a
-          >
-          <p class="has-text-justified has-text-centered textLeft">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            architecto eos culpa labore modi cum veniam sequi a id excepturi
-            maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus
-            neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque,
-            cupiditate aliquam odit amet similique deserunt aperiam fugit harum
-            rem, a quis cum qui dicta voluptatibus officia repellendus vel esse
-            porro doloremque explicabo? Repudiandae saepe qui eum similique nemo
-            in, molestiae unde voluptate! Consequuntur eaque, qui quam,
-            obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum
-            aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam
-            illo. Blanditiis in sequi quo, perferendis, corporis ullam
-            exercitationem magnam laborum necessitatibus ab aliquid
-            voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem
-            illo, quisquam quos laboriosam doloremque eaque cupiditate
-            praesentium a iusto? Maiores.
-          </p>
-        </div>
-        <div class="hero-body column is-half p-5 imgRight">
-          <div class="image">
-            <div class="">
-              <img src="/assets/images/mockupMacbookIpTracker.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="trait"></div>
-
-  <div class="container marge" data-aos="fade-up" data-aos-duration="2000">
-    <div class="grayBackground">
-      <div class="background5 columns">
-        <div class="hero-body column is-half first p-5">
-          <div class="image is-centered imgLeft">
-            <div class="">
-              <img src="/assets/images/mockupImageDe.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="column is-half p-5 second">
-          <a
-            href="https://apps.apple.com/kn/app/john-doeuf/id1520277206"
-            target="_blank"
-            ><h2 class="column has-text-centered textRight">Jeu de dé</h2></a
-          >
-          <p class="has-text-justified has-text-centered textRight">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-            architecto eos culpa labore modi cum veniam sequi a id excepturi
-            maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus
-            neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque,
-            cupiditate aliquam odit amet similique deserunt aperiam fugit harum
-            rem, a quis cum qui dicta voluptatibus officia repellendus vel esse
-            porro doloremque explicabo? Repudiandae saepe qui eum similique nemo
-            in, molestiae unde voluptate! Consequuntur eaque, qui quam,
-            obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum
-            aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam
-            illo. Blanditiis in sequi quo, perferendis, corporis ullam
-            exercitationem magnam laborum necessitatibus ab aliquid
-            voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem
-            illo, quisquam quos laboriosam doloremque eaque cupiditate
-            praesentium a iusto? Maiores.
-          </p>
-        </div>
-      </div>
+      <div class="trait"></div>
     </div>
   </div>
 </section>
@@ -214,54 +75,5 @@
         <a href="contact"> Contactez-moi</a>
       </button>
     </div>
-  </div>
-</section>
-
-<section class="hero hero-body is-fullheight">
-  <div class="container column p-5" *ngFor="let item of projectsItems">
-    <div *ngIf="item.projectId % 2 == 0; then pair; else impair"></div>
-    <ng-template #pair>
-      <div class="card columns">
-        <div class="card-body column is-half p-5">
-          <div class="card-image">
-            <img src="{{ item.projectImage }}" alt="Placeholder image" />
-          </div>
-        </div>
-        <div class="column is-half p-5">
-          <a href="{{ item.projectUrl }}" target="_blank"
-            ><h2 class="column has-text-centered">
-              {{ item.projectTitle }}
-            </h2></a
-          >
-          <p class="has-text-justify">
-            {{ item.projectText }}
-          </p>
-        </div>
-      </div>
-    </ng-template>
-
-    <ng-template #impair>
-      <div class="card columns">
-        <div class="card-body column is-half p-5">
-          <a href="{{ item.projectUrl }}" target="_blank"
-            ><h2 class="column has-text-centered">
-              {{ item.projectTitle }}
-            </h2></a
-          >
-          <p class="has-text-justify">
-            {{ item.projectText }}
-          </p>
-        </div>
-        <div class="column is-half p-5">
-          <div class="card-image">
-            <img
-              src="{{ item.projectImage }}"
-              alt="Placeholder image"
-              class="has-ratio"
-            />
-          </div>
-        </div>
-      </div>
-    </ng-template>
   </div>
 </section>
