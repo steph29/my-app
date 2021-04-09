@@ -20,9 +20,6 @@ export class ProjectsComponent implements OnInit {
       projectText:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum architecto eos culpa labore modi cum veniam sequi a id excepturi maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque, cupiditate aliquam odit amet similique deserunt aperiam fugit harum rem, a quis cum qui dicta voluptatibus officia repellendus vel esse porro doloremque explicabo? Repudiandae saepe qui eum similique nemo in, molestiae unde voluptate! Consequuntur eaque, qui quam, obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam illo. Blanditiis in sequi quo, perferendis, corporis ullam exercitationem magnam laborum necessitatibus ab aliquid voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem illo, quisquam quos laboriosam doloremque eaque cupiditate praesentium a iusto? Maiores.',
       projectUrl: 'https://www.terreenvie.com/benevoles/inscription.php',
-      projectColor: '#ffffff',
-      projectBackgroundColor:
-        'background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);',
     },
     {
       projectId: 1,
@@ -31,9 +28,6 @@ export class ProjectsComponent implements OnInit {
       projectText:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum architecto eos culpa labore modi cum veniam sequi a id excepturi maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque, cupiditate aliquam odit amet similique deserunt aperiam fugit harum rem, a quis cum qui dicta voluptatibus officia repellendus vel esse porro doloremque explicabo? Repudiandae saepe qui eum similique nemo in, molestiae unde voluptate! Consequuntur eaque, qui quam, obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam illo. Blanditiis in sequi quo, perferendis, corporis ullam exercitationem magnam laborum necessitatibus ab aliquid voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem illo, quisquam quos laboriosam doloremque eaque cupiditate praesentium a iusto? Maiores.',
       projectUrl: '#',
-      projectColor: '#ececec',
-      projectBackgroundColor:
-        'background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);',
     },
     {
       projectId: 2,
@@ -43,19 +37,7 @@ export class ProjectsComponent implements OnInit {
       projectText:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum architecto eos culpa labore modi cum veniam sequi a id excepturi maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque, cupiditate aliquam odit amet similique deserunt aperiam fugit harum rem, a quis cum qui dicta voluptatibus officia repellendus vel esse porro doloremque explicabo? Repudiandae saepe qui eum similique nemo in, molestiae unde voluptate! Consequuntur eaque, qui quam, obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam illo. Blanditiis in sequi quo, perferendis, corporis ullam exercitationem magnam laborum necessitatibus ab aliquid voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem illo, quisquam quos laboriosam doloremque eaque cupiditate praesentium a iusto? Maiores.',
       projectUrl: 'https://apps.apple.com/kn/app/john-doeuf/id1520277206',
-      projectColor: '#ffffff',
-      projectBackgroundColor:
-        'background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);',
     },
-    // {
-    //   projectId: 3,
-    //   projectImage: '/assets/images/nature3.jpg',
-    //   projectTitle: 'Ma super Agence: projet Symfony',
-    //   projectText:
-    //     'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum architecto eos culpa labore modi cum veniam sequi a id excepturi maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque, cupiditate aliquam odit amet similique deserunt aperiam fugit harum rem, a quis cum qui dicta voluptatibus officia repellendus vel esse porro doloremque explicabo? Repudiandae saepe qui eum similique nemo in, molestiae unde voluptate! Consequuntur eaque, qui quam, obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam illo. Blanditiis in sequi quo, perferendis, corporis ullam exercitationem magnam laborum necessitatibus ab aliquid voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem illo, quisquam quos laboriosam doloremque eaque cupiditate praesentium a iusto? Maiores.',
-    //   projectUrl: '#',
-    //   projectColor: '#ececec',
-    // },
     {
       projectId: 3,
       projectImage: '/assets/images/mockupMacbookIpTracker.png',
@@ -63,9 +45,14 @@ export class ProjectsComponent implements OnInit {
       projectText:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum architecto eos culpa labore modi cum veniam sequi a id excepturi maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque, cupiditate aliquam odit amet similique deserunt aperiam fugit harum rem, a quis cum qui dicta voluptatibus officia repellendus vel esse porro doloremque explicabo? Repudiandae saepe qui eum similique nemo in, molestiae unde voluptate! Consequuntur eaque, qui quam, obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam illo. Blanditiis in sequi quo, perferendis, corporis ullam exercitationem magnam laborum necessitatibus ab aliquid voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem illo, quisquam quos laboriosam doloremque eaque cupiditate praesentium a iusto? Maiores.',
       projectUrl: '#',
-      projectColor: '#ffffff',
-      projectBackgroundColor:
-        'background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);',
+    },
+    {
+      projectId: 4,
+      projectImage: '/assets/images/mockupImageDe.png',
+      projectTitle: 'Jeu de dé',
+      projectText:
+        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum architecto eos culpa labore modi cum veniam sequi a id excepturi maxime quia, cupiditate ex molestiae eius numquam nostrum, delectus neque Explicabo culpa perferendis voluptatum quam tenetur. Cumque, cupiditate aliquam odit amet similique deserunt aperiam fugit harum rem, a quis cum qui dicta voluptatibus officia repellendus vel esse porro doloremque explicabo? Repudiandae saepe qui eum similique nemo in, molestiae unde voluptate! Consequuntur eaque, qui quam, obcaecati provident nostrum nesciunt, perferendis voluptatem ipsum aspernatur eius ipsam tempore. Natus corrupti reiciendis numquam illo. Blanditiis in sequi quo, perferendis, corporis ullam exercitationem magnam laborum necessitatibus ab aliquid voluptatibus, soluta eveniet. Mollitia pariatur, exercitationem illo, quisquam quos laboriosam doloremque eaque cupiditate praesentium a iusto? Maiores.',
+      projectUrl: 'https://steph-verardo.fr/jseval3/:',
     },
   ];
 
