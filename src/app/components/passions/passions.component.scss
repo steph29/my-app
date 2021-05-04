@@ -2,14 +2,23 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 /*  */
+
 .hero-one {
-  background: url("/assets/images/freelance.jpg") fixed;
+  background: url("/assets/images/tasse.png") no-repeat;
   background-size: cover;
   background-position: center center;
-}
-.hero-body {
-  display: flex;
-  flex-direction: column;
+  background-attachment: fixed;
+  .bcg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+  .hero-body {
+    display: flex;
+    flex-direction: column;
+    filter: brightness(100%);
+  }
 }
 .striped {
   background: repeating-linear-gradient(
